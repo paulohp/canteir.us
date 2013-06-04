@@ -31,7 +31,7 @@ gem 'gioco'
 gem 'jquery-rails'
 gem 'mini_magick'
 gem 'carrierwave'
-gem 'twitter-bootstrap-rails'
+#gem 'twitter-bootstrap-rails'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
