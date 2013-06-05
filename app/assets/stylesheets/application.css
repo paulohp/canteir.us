@@ -12,9 +12,15 @@
  *= require_tree .
  */
 .demo-logo .logo{
-  background-size: 130px 93px;
-  height: 93px;
-  float: left;
-  margin: 0;
-  width: 130px;
+  background-size: 90px 63px!important;
+  height: 63px!important;
+  float: left!important;
+  margin: 0!important;
+  width: 90px!important;
+}
+.demo-logo {
+  line-height: 67px!important;
+}
+.header-login{
+  float: right;
 }
