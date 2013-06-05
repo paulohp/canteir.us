@@ -11,3 +11,10 @@
  *= require_self
  *= require_tree .
  */
+.demo-logo .logo{
+  background-size: 130px 93px;
+  height: 93px;
+  float: left;
+  margin: 0;
+  width: 130px;
+}
