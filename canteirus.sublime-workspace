@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"font",
+				"font-style"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"hea",
+				"header"
+			],
+			[
+				"flo",
+				"float"
+			],
+			[
+				"hee",
+				"header"
+			],
+			[
 				"impo",
 				"important"
 			],
@@ -48,10 +72,6 @@
 				"reward"
 			],
 			[
-				"font",
-				"font-weight"
-			],
-			[
 				"des",
 				"destroy"
 			],
@@ -88,10 +108,6 @@
 				"rewards"
 			],
 			[
-				"tex",
-				"text"
-			],
-			[
 				"min",
 				"min-height"
 			],
@@ -114,10 +130,6 @@
 			[
 				"use",
 				"user"
-			],
-			[
-				"hea",
-				"heart"
 			],
 			[
 				"op",
@@ -210,10 +222,6 @@
 			[
 				"strk",
 				"strokeWidth"
-			],
-			[
-				"text",
-				"textShadow"
 			],
 			[
 				"obje",
@@ -506,14 +514,6 @@
 			[
 				"ad",
 				"addEventListener"
-			],
-			[
-				"sel",
-				"self"
-			],
-			[
-				"hi",
-				"hidden_field"
 			]
 		]
 	},
@@ -536,13 +536,10 @@
 			}
 		},
 		{
-			"contents": "<!DOCTYPE html>\n<html>\n<head>\n  <title>Canteiro</title>\n  <%= stylesheet_link_tag    \"application\", :media => \"all\" %>\n\n  <%= csrf_meta_tags %>\n</head>\n<body>\n<div class=\"container\">\n    <div class=\"header-login\">\n      <% if user_signed_in? %>\n        <%= link_to \"Sair\", destroy_user_session_path, :method => :delete %>\n      <% else %>\n        \n      <% end %>\n    </div>\n      <div>\n        <h1 class=\"demo-logo\">\n          <div class=\"logo\"></div>\n          canteir.us\n        </h1>\n      </div> <!-- /demo-headline -->\n\n      <h1>Basic elements</h1>\n      <h3 class=\"demo-panel-title\">Buttons</h3>\n\n      <div class=\"row demo-row\">\n        <div class=\"span3\">\n          <a href=\"#fakelink\" class=\"btn btn-large btn-block btn-primary\">Primary Button</a>\n        </div>\n        <div class=\"span3\">\n          <a href=\"#fakelink\" class=\"btn btn-large btn-block btn-warning\">Warning Button</a>\n        </div>\n        <div class=\"span3\">\n          <a href=\"#fakelink\" class=\"btn btn-block btn-large\">Default Button</a>\n        </div>\n        <div class=\"span3\">\n          <a href=\"#fakelink\" class=\"btn btn-large btn-block btn-danger\">Danger Button</a>\n        </div>\n      </div> <!-- /row -->\n\n      <div class=\"row demo-row\">\n        <div class=\"span3\">\n          <a href=\"#fakelink\" class=\"btn btn-large btn-block btn-success\">Success Button</a>\n        </div>\n        <div class=\"span3\">\n          <a href=\"#fakelink\" class=\"btn btn-large btn-block btn-inverse\">Inverse Button</a>\n        </div>\n        <div class=\"span3\">\n          <a href=\"#fakelink\" class=\"btn btn-large btn-block btn-info\">Info Button</a>\n        </div>\n        <div class=\"span3\">\n          <a href=\"#fakelink\" class=\"btn btn-large btn-block disabled\">Disabled Button</a>\n        </div>\n      </div> <!-- /row -->\n\n      <h3 class=\"demo-panel-title\">Menu</h3>\n      <div class=\"row demo-row\">\n        <div class=\"span9\">\n          <div class=\"navbar navbar-inverse\">\n            <div class=\"navbar-inner\">\n              <div class=\"container\">\n                <button type=\"button\" class=\"btn btn-navbar\" data-toggle=\"collapse\" data-target=\"#nav-collapse-01\"></button>\n                <div class=\"nav-collapse collapse\" id=\"nav-collapse-01\">\n                  <ul class=\"nav\">\n                    <li>\n                      <a href=\"#fakelink\">\n                        Menu Item\n                        <span class=\"navbar-unread\">1</span>\n                      </a>\n                    </li>\n                    <li class=\"active\">\n                      <a href=\"#fakelink\">\n                        Messages\n                        <span class=\"navbar-unread\">1</span>\n                      </a>\n                      <ul>\n                        <li><a href=\"#fakelink\">Element One</a></li>\n                        <li>\n                          <a href=\"#fakelink\">Sub menu</a>\n                          <ul>\n                            <li><a href=\"#fakelink\">Element One</a></li>\n                            <li><a href=\"#fakelink\">Element Two</a></li>\n                            <li><a href=\"#fakelink\">Element Three</a></li>\n                          </ul> <!-- /Sub menu -->\n                        </li>\n                        <li><a href=\"#fakelink\">Element Three</a></li>\n                      </ul> <!-- /Sub menu -->\n                    </li>\n                    <li>\n                      <a href=\"#fakelink\">\n                        About Us\n                      </a>\n                    </li>\n                  </ul>\n                </div><!--/.nav -->\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class=\"span3\">\n          <select name=\"herolist\" value=\"X-Men\" class=\"select-block span3\">\n            <option value=\"0\">Choose hero</option>\n            <option value=\"1\">Spider Man</option>\n            <option value=\"2\">Wolverine</option>\n            <option value=\"3\">Captain America</option>\n            <option value=\"X-Men\" selected=\"selected\">X-Men</option>\n            <option value=\"Crocodile\">Crocodile</option>\n          </select>\n        </div>\n      </div> <!-- /row -->\n\n      <h3 class=\"demo-panel-title\">Input</h3>\n      <div class=\"row\">\n        <div class=\"span3\">\n          <input type=\"text\" value=\"\" placeholder=\"Inactive\" class=\"span3\" />\n        </div>\n        <div class=\"span3\">\n          <div class=\"control-group error\">\n            <input type=\"text\" value=\"Error\" class=\"span3\" />\n          </div>\n        </div>\n        <div class=\"span3\">\n          <div class=\"control-group success\">\n            <input type=\"text\" value=\"Success\" class=\"span3\" />\n            <i class=\"input-icon fui-check-inverted\"></i>\n          </div>\n        </div>\n        <div class=\"span3\">\n          <input type=\"text\" value=\"Disabled\" disabled=\"disabled\" class=\"span3\" />\n        </div>\n      </div> <!-- /row -->\n\n      <div class=\"row\">\n        <div class=\"span5\">\n          <h3 class=\"demo-panel-title\">Progress bars &amp; Sliders</h3>\n          <div class=\"progress\">\n            <div class=\"bar\" style=\"width: 45%;\"></div>\n          </div>\n          <br/>\n          <div class=\"progress\">\n            <div class=\"bar\" style=\"width: 40%;\"></div>\n            <div class=\"bar bar-warning\" style=\"width: 10%;\"></div>\n            <div class=\"bar bar-danger\" style=\"width: 10%;\"></div>\n            <div class=\"bar bar-success\" style=\"width: 10%;\"></div>\n            <div class=\"bar bar-info\" style=\"width: 10%;\"></div>\n          </div>\n          <br/>\n          <div id=\"slider\" class=\"ui-slider\">\n            <div class=\"ui-slider-segment\"></div>\n            <div class=\"ui-slider-segment\"></div>\n            <div class=\"ui-slider-segment\"></div>\n          </div>\n        </div> <!-- /sliders -->\n\n        <div class=\"span6 offset1\">\n          <h3 class=\"demo-panel-title\">Navigation</h3>\n          <div class=\"row demo-navigation\">\n            <div class=\"span3\">\n              <div class=\"btn-toolbar\">\n                <div class=\"btn-group\">\n                  <a class=\"btn btn-primary\" href=\"#fakelink\"><i class=\"fui-time\"></i></a>\n                  <a class=\"btn btn-primary\" href=\"#fakelink\"><i class=\"fui-photo\"></i></a>\n                  <a class=\"btn btn-primary active\" href=\"#fakelink\"><i class=\"fui-heart\"></i></a>\n                  <a class=\"btn btn-primary\" href=\"#fakelink\"><i class=\"fui-eye\"></i></a>\n                </div>\n              </div> <!-- /toolbar -->\n            </div>\n            <div class=\"span3 demo-pager\">\n              <ul class=\"pager\">\n                <li class=\"previous\">\n                  <a href=\"#fakelink\">\n                    <i class=\"fui-arrow-left\"></i>\n                    <span>All messages</span>\n                  </a>\n                </li>\n                <li class=\"next\">\n                  <a href=\"#fakelink\">\n                    <i class=\"fui-arrow-right\"></i>\n                  </a>\n                </li>\n              </ul> <!-- /pager -->\n            </div>\n          </div> <!-- /demo-navigation -->\n\n          <div class=\"pagination\">\n            <ul>\n              <li class=\"previous\"><a href=\"#fakelink\" class=\"fui-arrow-left\"></a></li>\n              <li class=\"active\"><a href=\"#fakelink\">1</a></li>\n              <li><a href=\"#fakelink\">2</a></li>\n              <li><a href=\"#fakelink\">3</a></li>\n              <li><a href=\"#fakelink\">4</a></li>\n              <li><a href=\"#fakelink\">5</a></li>\n              <li><a href=\"#fakelink\">6</a></li>\n              <li><a href=\"#fakelink\">7</a></li>\n              <li><a href=\"#fakelink\">8</a></li>\n              <li class=\"next\"><a href=\"#fakelink\" class=\"fui-arrow-right\"></a></li>\n            </ul>\n          </div> <!-- /pagination -->\n        </div> <!-- /navigation -->\n      </div> <!-- /row -->\n\n      <div class=\"row\">\n        <div class=\"span3\">\n          <h3 class=\"demo-panel-title\">Checkboxes</h3>\n          <label class=\"checkbox\" for=\"checkbox1\">\n            <input type=\"checkbox\" value=\"\" id=\"checkbox1\" data-toggle=\"checkbox\">\n            Unchecked\n          </label>\n          <label class=\"checkbox\" for=\"checkbox2\">\n            <input type=\"checkbox\" checked=\"checked\" value=\"\" id=\"checkbox2\" data-toggle=\"checkbox\" checked=\"\">\n            Checked\n          </label>\n          <label class=\"checkbox\" for=\"checkbox3\">\n            <input type=\"checkbox\" value=\"\" id=\"checkbox3\" data-toggle=\"checkbox\" disabled=\"\">\n            Disabled unchecked\n          </label>\n          <label class=\"checkbox\" for=\"checkbox4\">\n            <input type=\"checkbox\" checked=\"checked\" value=\"\" id=\"checkbox4\" data-toggle=\"checkbox\" disabled=\"\" checked=\"\">\n            Disabled checked\n          </label>\n        </div> <!-- /checkboxes span3 -->\n\n        <div class=\"span3\">\n          <h3 class=\"demo-panel-title\">Radio Buttons</h3>\n          <label class=\"radio\">\n            <input type=\"radio\" name=\"optionsRadios\" id=\"optionsRadios1\" value=\"option1\" data-toggle=\"radio\">\n            Radio is off\n          </label>\n          <label class=\"radio\">\n            <input type=\"radio\" name=\"optionsRadios\" id=\"optionsRadios2\" value=\"option1\" data-toggle=\"radio\" checked=\"\">\n            Radio is on\n          </label>\n\n          <label class=\"radio\">\n            <input type=\"radio\" name=\"optionsRadiosDisabled\" id=\"optionsRadios3\" value=\"option2\" data-toggle=\"radio\" disabled=\"\">\n            Disabled radio is off\n          </label>\n          <label class=\"radio\">\n            <input type=\"radio\" name=\"optionsRadiosDisabled\" id=\"optionsRadios4\" value=\"option2\" data-toggle=\"radio\" checked=\"\" disabled=\"\">\n            Disabled radio is on\n          </label>\n        </div> <!-- /radios span3 -->\n\n        <div class=\"span3\">\n          <h3 class=\"demo-panel-title\">Switches</h3>\n\n          <table width=\"100%\">\n            <tr>\n              <td width=\"50%\" class=\"pbm\">\n                <input type=\"checkbox\" checked=\"\" data-toggle=\"switch\" />\n              </td>\n\n              <td class=\"pbm\">\n                <input type=\"checkbox\" data-toggle=\"switch\" />\n              </td>\n            </tr>\n            <tr>\n              <td class=\"pbm\">\n                <div class=\"switch switch-square\"\n                  data-on-label=\"<i class='fui-check'></i>\"\n                  data-off-label=\"<i class='fui-cross'></i>\">\n                  <input type=\"checkbox\" />\n                </div>\n              </td>\n\n              <td class=\"pbm\">\n                <div class=\"switch switch-square\"\n                  data-on-label=\"<i class='fui-check'></i>\"\n                  data-off-label=\"<i class='fui-cross'></i>\">\n                  <input type=\"checkbox\" checked=\"\" />\n                </div>\n              </td>\n            </tr>\n            <tr>\n              <td>\n                <input type=\"checkbox\" disabled data-toggle=\"switch\" />\n              </td>\n\n              <td>\n                <input type=\"checkbox\" checked disabled data-toggle=\"switch\" />\n              </td>\n            </tr>\n          </table>\n        </div> <!-- /toggles span3 -->\n\n        <div class=\"span3\">\n          <h3 class=\"demo-panel-title\">Tags</h3>\n          <input name=\"tagsinput\" id=\"tagsinput\" class=\"tagsinput\" value=\"Clean,Fresh,Modern,Unique\" />\n        </div>\n      </div> <!-- /row -->\n\n      <div class=\"row\">\n        <div class=\"span3\">\n          <h3 class=\"demo-panel-title\">Share</h3>\n          <div class=\"share mrl\">\n            <ul>\n              <li>\n                <label class=\"share-label\" for=\"share-toggle2\">Facebook</label>\n                <input type=\"checkbox\" data-toggle=\"switch\" />\n              </li>\n              <li>\n                <label class=\"share-label\" for=\"share-toggle4\">Twitter</label>\n                <input type=\"checkbox\" checked=\"\" data-toggle=\"switch\" />\n              </li>\n              <li>\n                <label class=\"share-label\" for=\"share-toggle6\">Pinterest</label>\n                <input type=\"checkbox\" data-toggle=\"switch\" />\n              </li>\n            </ul>\n            <a href=\"#\" class=\"btn btn-primary btn-block btn-large\">Share</a>\n          </div> <!-- /share -->\n        </div>\n\n        <div class=\"span3\">\n          <div class=\"demo-tooltips\">\n            <h3 class=\"demo-panel-title\">Tooltips</h3>\n            <p align=\"center\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"Tooltip under the text.\"></p>\n            <p align=\"center\" data-toggle=\"tooltip\" title=\"Here is the sample of talltooltip that contains three lines or more. More.\"></p>\n          </div>\n        </div> <!-- /span3 with tooltips -->\n\n        <div class=\"span4\">\n          <div class=\"demo-text-box prl\">\n            <h3 class=\"demo-panel-title\">Text Box</h3>\n            <p><strong>Lato</strong> is free web-font designed by <strong>Lukasz&nbsp;Dziedzic</strong> from Warsaw.</p>\n            <p>Here you can feel the color, size, line height and margins between paragraphs. Don’t forget to underline\n              your links, they are an important <a href=\"#\">visual marker</a> for users.</p>\n            <p>Also, to attract attention you can mark some&nbsp;important words using <strong>bold weights</strong>.</p>\n          </div>\n        </div> <!-- /text box -->\n\n        <div class=\"span2\">\n          <h3 class=\"demo-panel-title demo-headings\">Headings</h3>\n          <h1>Header</h1>\n          <h2>Header 2</h2>\n          <h3>Header 3</h3>\n          <h4>Header 4</h4>\n          <h5>Header 5</h5>\n          <h6>Header 6</h6>\n        </div> <!-- /headings -->\n      </div> <!-- /row -->\n\n      <div class=\"row\">\n        <div class=\"span10\">\n          <h3 class=\"demo-panel-title\">Color Swatches</h3>\n          <div class=\"row mbl\">\n            <div class=\"span2\">\n              <dl class=\"palette palette-turquoise\">\n                <dt>#1abc9c</dt>\n                <dd>Turquoise</dd>\n              </dl>\n              <dl class=\"palette palette-green-sea\">\n                <dt>#16a085</dt>\n                <dd>Green sea</dd>\n              </dl>\n            </div>\n\n            <div class=\"span2\">\n              <dl class=\"palette palette-emerland\">\n                <dt>#2ecc71</dt>\n                <dd>Emerland</dd>\n              </dl>\n              <dl class=\"palette palette-nephritis\">\n                <dt>#27ae60</dt>\n                <dd>Nephritis</dd>\n              </dl>\n            </div>\n\n            <div class=\"span2\">\n              <dl class=\"palette palette-peter-river\">\n                <dt>#3498db</dt>\n                <dd>Peter river</dd>\n              </dl>\n              <dl class=\"palette palette-belize-hole\">\n                <dt>#2980b9</dt>\n                <dd>Belize hole</dd>\n              </dl>\n            </div>\n\n            <div class=\"span2\">\n              <dl class=\"palette palette-amethyst\">\n                <dt>#9b59b6</dt>\n                <dd>Amethyst</dd>\n              </dl>\n              <dl class=\"palette palette-wisteria\">\n                <dt>#8e44ad</dt>\n                <dd>Wisteria</dd>\n              </dl>\n            </div>\n\n            <div class=\"span2\">\n              <dl class=\"palette palette-wet-asphalt\">\n                <dt>#34495e</dt>\n                <dd>Wet asphalt</dd>\n              </dl>\n              <dl class=\"palette palette-midnight-blue\">\n                <dt>#2c3e50</dt>\n                <dd>Midnight blue</dd>\n              </dl>\n            </div>\n          </div> <!-- /color swatches -->\n\n          <div class=\"row mbl\">\n            <div class=\"span2\">\n              <dl class=\"palette palette-sun-flower\">\n                <dt>#f1c40f</dt>\n                <dd>Sun flower</dd>\n              </dl>\n              <dl class=\"palette palette-orange\">\n                <dt>#f39c12</dt>\n                <dd>Orange</dd>\n              </dl>\n            </div>\n\n            <div class=\"span2\">\n              <dl class=\"palette palette-carrot\">\n                <dt>#e67e22</dt>\n                <dd>Carrot</dd>\n              </dl>\n              <dl class=\"palette palette-pumpkin\">\n                <dt>#d35400</dt>\n                <dd>Pumpkin</dd>\n              </dl>\n            </div>\n\n            <div class=\"span2\">\n              <dl class=\"palette palette-alizarin\">\n                <dt>#e74c3c</dt>\n                <dd>Alizarin</dd>\n              </dl>\n              <dl class=\"palette palette-pomegranate\">\n                <dt>#c0392b</dt>\n                <dd>Pomegranate</dd>\n              </dl>\n            </div>\n\n            <div class=\"span2\">\n              <dl class=\"palette palette-clouds\">\n                <dt>#ecf0f1</dt>\n                <dd>Clouds</dd>\n              </dl>\n              <dl class=\"palette palette-silver\">\n                <dt>#bdc3c7</dt>\n                <dd>Silver</dd>\n              </dl>\n            </div>\n\n            <div class=\"span2\">\n              <dl class=\"palette palette-concrete\">\n                <dt>#95a5a6</dt>\n                <dd>Concrete</dd>\n              </dl>\n              <dl class=\"palette palette-asbestos\">\n                <dt>#7f8c8d</dt>\n                <dd>Asbestos</dd>\n              </dl>\n            </div>\n          </div> <!-- /color swatches -->\n        </div>\n\n        <div class=\"span2\">\n          <h3 class=\"demo-panel-title\">&nbsp;</h3>\n          <h6 class=\"palette-headline\">SWATCHES</h6>\n          <p class=\"palette-paragraph\">\n            Colors &mdash; is almost the most important part of the <strong>Flat UI</strong>. Better to use different shades of provided colors than new.\n          </p>\n          <p class=\"palette-paragraph\">\n            For your convenience we also provide <strong>Swatches Preset</strong> <span>(flat&#8209;ui&#8209;swatches.aco in the Pack folder).</span>\n          </p>\n          <p class=\"palette-paragraph\">\n            <strong>No gradients, no shadows.</strong>\n          </p>\n        </div> <!-- /swatches desc -->\n      </div> <!-- /swatches row -->\n\n      <h3 class=\"demo-panel-title\">Icons <small>(14)</small></h3>\n      <div class=\"demo-illustrations\">\n        <div class=\"demo-content\">\n          <div><img src=\"/assets/icons/Toilet-Paper@2x.png\" alt=\"Toilet-Paper\"></div>\n          <div><img src=\"/assets/icons/Gift-Box@2x.png\" alt=\"Gift-Box\"></div>\n          <div><img src=\"/assets/icons/Pensils@2x.png\" alt=\"Pensils\"></div>\n          <div><img src=\"/assets/icons/Clipboard@2x.png\" alt=\"Clipboard\"></div>\n          <div><img src=\"/assets/icons/Retina-Ready@2x.png\" alt=\"Retina-Ready\"></div>\n          <div><img src=\"/assets/icons/Compas@2x.png\" alt=\"Compas\"></div>\n          <div><img src=\"/assets/icons/Map@2x.png\" alt=\"Map\"></div>\n          <div><img src=\"/assets/icons/Chat@2x.png\" alt=\"Chat\"></div>\n          <div><img src=\"/assets/icons/Mail@2x.png\" alt=\"Mail\"></div>\n          <div><img src=\"/assets/icons/Book@2x.png\" alt=\"Book\"></div>\n          <div><img src=\"/assets/icons/Calendar@2x.png\" alt=\"Calendar\"></div>\n          <div><img src=\"/assets/icons/Pocket@2x.png\" alt=\"Pocket\"></div>\n          <div><img src=\"/assets/icons/Watches@2x.png\" alt=\"Watches\"></div>\n          <div><img src=\"/assets/icons/Infinity-Loop@2x.png\" alt=\"Infinity-Loop\"></div>\n        </div>\n      </div>\n\n      <div class=\"demo-icons\">\n        <h3 class=\"demo-panel-title\">Glyphs <small>(30)</small></h3>\n        <div class=\"demo-content\">\n          <span class=\"fui-arrow-right\"></span>\n          <span class=\"fui-arrow-left\"></span>\n          <span class=\"fui-cmd\"></span>\n          <span class=\"fui-check-inverted\"></span>\n          <span class=\"fui-heart\"></span>\n          <span class=\"fui-location\"></span>\n          <span class=\"fui-plus\"></span>\n          <span class=\"fui-check\"></span>\n          <span class=\"fui-cross\"></span>\n          <span class=\"fui-list\"></span>\n          <span class=\"fui-new\"></span>\n          <span class=\"fui-video\"></span>\n          <span class=\"fui-photo\"></span>\n          <span class=\"fui-volume\"></span>\n          <span class=\"fui-time\"></span>\n          <span class=\"fui-eye\"></span>\n          <span class=\"fui-chat\"></span>\n          <span class=\"fui-search\"></span>\n          <span class=\"fui-user\"></span>\n          <span class=\"fui-mail\"></span>\n          <span class=\"fui-lock\"></span>\n          <span class=\"fui-gear\"></span>\n          <span class=\"fui-radio-unchecked\"></span>\n          <span class=\"fui-radio-checked\"></span>\n          <span class=\"fui-checkbox-unchecked\"></span>\n          <span class=\"fui-checkbox-checked\"></span>\n          <span class=\"fui-calendar-solid\"></span>\n          <span class=\"fui-pause\"></span>\n          <span class=\"fui-play\"></span>\n          <span class=\"fui-check-inverted-2\"></span>\n        </div>\n      </div> <!-- /icon font row -->\n\n      <h1 class=\"mbl pbl\">Samples</h1>\n      <div class=\"row demo-samples\">\n        <div class=\"span4\">\n          <div class=\"todo mrm\">\n            <div class=\"todo-search\">\n              <input class=\"todo-search-field\" type=\"search\" value=\"\" placeholder=\"Search\" />\n            </div>\n            <ul>\n              <li class=\"todo-done\">\n                <div class=\"todo-icon fui-user\"></div>\n                <div class=\"todo-content\">\n                  <h4 class=\"todo-name\">\n                    Meet <strong>Adrian</strong> at <strong>6pm</strong>\n                  </h4>\n                  Times Square\n                </div>\n              </li>\n\n              <li>\n                <div class=\"todo-icon fui-list\"></div>\n                <div class=\"todo-content\">\n                  <h4 class=\"todo-name\">\n                    Chat with <strong>V.Kudinov</strong>\n                  </h4>\n                  Skype conference an 9 am\n                </div>\n              </li>\n\n              <li>\n                <div class=\"todo-icon fui-eye\"></div>\n                <div class=\"todo-content\">\n                  <h4 class=\"todo-name\">\n                    Watch <strong>Iron Man</strong>\n                  </h4>\n                  1998 Broadway\n                </div>\n              </li>\n\n              <li>\n                <div class=\"todo-icon fui-time\"></div>\n                <div class=\"todo-content\">\n                  <h4 class=\"todo-name\">\n                    Fix bug on a <strong>Website</strong>\n                  </h4>\n                  As soon as possible\n                </div>\n              </li>\n            </ul>\n          </div>\n        </div> <!-- /todo list -->\n\n        <div class=\"span8 demo-video\">\n          <!--[if !IE]> -->\n            <video class=\"video-js\" controls\n              preload=\"auto\" width=\"620\" height=\"349\" poster=\"/assets/video/poster.jpg\" data-setup=\"{}\">\n              <source src=\"http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.mp4\" type=\"video/mp4\">\n              <source src=\"http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.webm\" type=\"video/webm\">\n            </video>\n          <!-- <![endif]-->\n\n          <!--[if IE]>\n            <video class=\"video-js\" controls\n              preload=\"auto\" width=\"620\" height=\"256\" poster=\"http://video-js.zencoder.com/oceans-clip.jpg\" data-setup=\"{}\">\n              <source src=\"http://video-js.zencoder.com/oceans-clip.mp4\" type='video/mp4'/>\n              <source src=\"http://video-js.zencoder.com/oceans-clip.webm\" type='video/webm'/>\n            </video>\n          <![endif]-->\n        </div> <!-- /video -->\n      </div>\n\n      <div class=\"row demo-tiles\">\n        <div class=\"span3\">\n          <div class=\"tile\">\n            <img src=\"/assets/icons/Compas@2x.png\" alt=\"Compas@2x\" class=\"tile-image big-illustration\">\n            <h3 class=\"tile-title\">Web Oriented</h3>\n            <p>100% convertable to HTML/CSS layout.</p>\n            <a class=\"btn btn-primary btn-large btn-block\" href=\"http://designmodo.com/flat\">Get Pro</a>\n          </div>\n        </div>\n\n        <div class=\"span3\">\n          <div class=\"tile\">\n            <img src=\"/assets/icons/Infinity-Loop@2x.png\" alt=\"Infinity-Loop@2x\" class=\"tile-image\">\n            <h3 class=\"tile-title\">Easy to Customize</h3>\n            <p>Vector-based shapes and minimum of layer styles.</p>\n            <a class=\"btn btn-primary btn-large btn-block\" href=\"http://designmodo.com/flat\">Get Pro</a>\n          </div>\n        </div>\n\n        <div class=\"span3\">\n          <div class=\"tile\">\n            <img src=\"/assets/icons/Pensils@2x.png\" alt=\"Pensils@2x\" class=\"tile-image\">\n            <h3 class=\"tile-title\">Color Swatches</h3>\n            <p>Easy to add or change elements. </p>\n            <a class=\"btn btn-primary btn-large btn-block\" href=\"http://designmodo.com/flat\">Get Pro</a>\n          </div>\n        </div>\n\n        <div class=\"span3\">\n          <div class=\"tile tile-hot\">\n            <img src=\"/assets/icons/Chat@2x.png\" alt=\"Chat@2x\" class=\"tile-image\">\n            <h3 class=\"tile-title\">Free for Share</h3>\n            <p>Your likes, shares and comments helps us.</p>\n            <a class=\"btn btn-primary btn-large btn-block\" href=\"http://designmodo.com/flat\">Get Pro</a>\n          </div>\n\n        </div>\n      </div> <!-- /tiles -->\n\n      <div class=\"login\">\n        <div class=\"login-screen\">\n          <div class=\"login-icon\">\n            <img src=\"/assets/login/icon.png\" alt=\"Welcome to Mail App\" />\n            <h4>Welcome to <small>Mail App</small></h4>\n          </div>\n\n          <div class=\"login-form\">\n            <div class=\"control-group\">\n              <input type=\"text\" class=\"login-field\" value=\"\" placeholder=\"Enter your name\" id=\"login-name\" />\n              <label class=\"login-field-icon fui-user\" for=\"login-name\"></label>\n            </div>\n\n            <div class=\"control-group\">\n              <input type=\"password\" class=\"login-field\" value=\"\" placeholder=\"Password\" id=\"login-pass\" />\n              <label class=\"login-field-icon fui-lock\" for=\"login-pass\"></label>\n            </div>\n\n            <a class=\"btn btn-primary btn-large btn-block\" href=\"#\">Login</a>\n            <a class=\"login-link\" href=\"#\">Lost your password?</a>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"row\">\n        <div class=\"span9\">\n          <div class=\"demo-browser\">\n            <div class=\"demo-browser-side\">\n              <div class=\"demo-browser-author\"></div>\n              <div class=\"demo-browser-action\">\n                <a class=\"btn btn-danger btn-large btn-block\" href=\"http://twitter.com/monstercritic\" target=\"_blank\">\n                  Follow\n                </a>\n              </div>\n              <h5>@monstercritic</h5>\n              <h6>\n                Tourist. Designer. NYC\n                <a href=\"http://shmidt.in\" target=\"_blank\">shmidt.in</a>\n              </h6>\n            </div>\n            <div class=\"demo-browser-content\">\n              <img src=\"/assets/demo/browser-pic-1.jpg\" alt=\"\" />\n              <img src=\"/assets/demo/browser-pic-2.jpg\" alt=\"\" />\n              <img src=\"/assets/demo/browser-pic-3.jpg\" alt=\"\" />\n              <img src=\"/assets/demo/browser-pic-4.jpg\" alt=\"\" />\n              <img src=\"/assets/demo/browser-pic-5.jpg\" alt=\"\" />\n              <img src=\"/assets/demo/browser-pic-6.jpg\" alt=\"\" />\n            </div>\n          </div>\n        </div>\n\n        <div class=\"span3\">\n          <div class=\"demo-download\">\n            <img src=\"/assets/demo/html-icon.png\" src=\"Free PSD\" />\n          </div>\n\n          <a href=\"https://github.com/designmodo/Flat-UI/archive/master.zip\" class=\"btn btn-primary btn-large btn-block\">Download</a>\n\n          <p class=\"demo-download-text\">Your likes, shares and comments make us happy!</p>\n        </div>\n      </div> <!-- /download area -->\n      <%= yield %>\n    </div> <!-- /container -->\n\n\n\n<%= render 'layouts/footer' %>\n<!-- Load JS here for greater good =============================-->\n    <script src=\"/assets/jquery-1.8.3.min.js\"></script>\n    <script src=\"/assets/jquery-ui-1.10.3.custom.min.js\"></script>\n    <script src=\"/assets/jquery.ui.touch-punch.min.js\"></script>\n    <script src=\"/assets/bootstrap.min.js\"></script>\n    <script src=\"/assets/bootstrap-select.js\"></script>\n    <script src=\"/assets/bootstrap-switch.js\"></script>\n    <script src=\"/assets/flatui-checkbox.js\"></script>\n    <script src=\"/assets/flatui-radio.js\"></script>\n    <script src=\"/assets/jquery.tagsinput.js\"></script>\n    <script src=\"/assets/jquery.placeholder.js\"></script>\n    <script src=\"/assets/jquery.stacktable.js\"></script>\n    <script src=\"http://vjs.zencdn.net/c/video.js\"></script>\n    <script src=\"/assets/z_application_c.js\"></script>\n</body>\n</html>\n",
 			"file": "app/views/layouts/application.html.erb",
-			"file_size": 28326,
-			"file_write_time": 1370394435000000,
 			"settings":
 			{
-				"buffer_size": 28333,
+				"buffer_size": 1591,
 				"line_ending": "Unix"
 			}
 		},
@@ -566,7 +563,15 @@
 			"file": "app/assets/stylesheets/application.css",
 			"settings":
 			{
-				"buffer_size": 750,
+				"buffer_size": 1074,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/jobs_controller.rb",
+			"settings":
+			{
+				"buffer_size": 53,
 				"line_ending": "Unix"
 			}
 		}
@@ -1012,7 +1017,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -1072,15 +1077,15 @@
 					"file": "app/views/layouts/application.html.erb",
 					"settings":
 					{
-						"buffer_size": 28333,
+						"buffer_size": 1591,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								347,
-								347
+								431,
+								431
 							]
 						],
 						"settings":
@@ -1088,7 +1093,7 @@
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 152.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1150,20 +1155,46 @@
 					"file": "app/assets/stylesheets/application.css",
 					"settings":
 					{
-						"buffer_size": 750,
+						"buffer_size": 1074,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								747,
-								747
+								1010,
+								1010
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 332.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/controllers/jobs_controller.rb",
+					"settings":
+					{
+						"buffer_size": 53,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								48,
+								48
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
