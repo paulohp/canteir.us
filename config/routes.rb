@@ -1,4 +1,6 @@
 Canteiro::Application.routes.draw do
+  devise_for :companies
+
   resources :companies
 
 
