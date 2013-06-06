@@ -1,4 +1,5 @@
 class Company < ActiveRecord::Base
+  has_many :jobs
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
@@ -6,7 +7,5 @@ class Company < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me
-  has_many :jobs
-  attr_accessible :location, :name
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :location, :name
 end
