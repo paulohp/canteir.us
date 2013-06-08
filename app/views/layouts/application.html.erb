@@ -8,32 +8,31 @@
 </head>
 <body>
 <div class="container">
-  <div class="header-login">
+ <!-- <div class="header-login">
     <% if user_signed_in? %>
       <%= link_to "Sair", destroy_user_session_path, :method => :delete %>
     <% else %>
       <%= link_to "Cadastre-se", new_user_registration_path %>
     <% end %>
-  </div>
+  </div>-->
   <div class="logo-container">
     <h1 class="left demo-logo">
       <div class="logo"></div>
       canteir.us
     </h1>
-    <ul class="left top-menu">
+   <!-- <ul class="left top-menu">
       <li><%= link_to 'Vagas', jobs_path %></li>
       <li><%= link_to 'Curriculo', '#' %></li>
       <li><%= link_to 'Empresas', companies_path %></li>
-    </ul>
+    </ul>-->
   </div> <!-- /demo-headline -->
 
   <%= yield %>
 
 </div> <!-- /container -->
 
-
-
 <%= render 'layouts/footer' %>
+
 <!-- Load JS here for greater good =============================-->
     <script src="/assets/jquery-1.8.3.min.js"></script>
     <script src="/assets/jquery-ui-1.10.3.custom.min.js"></script>

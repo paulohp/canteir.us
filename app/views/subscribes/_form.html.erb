@@ -1,25 +1,34 @@
-<%= form_for(@subscribe) do |f| %>
-  <% if @subscribe.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@subscribe.errors.count, "error") %> prohibited this subscribe from being saved:</h2>
-
-      <ul>
-      <% @subscribe.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+<div class="login">
+  <div class="login-screen">
+    <div class="login-icon">
+      <img src="images/login/icon.png" alt="Welcome to Mail App" />
+      <h4>Welcome to <small>Mail App</small></h4>
     </div>
-  <% end %>
+    <%= form_for(@subscribe) do |f| %>
+      <% if @subscribe.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@subscribe.errors.count, "error") %> prohibited this subscribe from being saved:</h2>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+          <ul>
+          <% @subscribe.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+      <div class="login-form">
+        <div class="control-group">
+          <%= f.label :name %><br />
+          <%= f.text_field :name %>
+        </div>
+        <div class="control-group">
+          <%= f.label :email %><br />
+          <%= f.text_field :email %>
+        </div>
+        <div class="actions">
+          <%= f.submit %>
+        </div>
+      </div>
+    <% end %>
   </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+</div>
