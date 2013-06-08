@@ -11,7 +11,7 @@
  *= require_self
  *= require_tree .
  */
- .left{
+ /*.left{
   float:left;
  }
 .logo-container{
@@ -48,4 +48,4 @@
 .top-menu a {
   text-decoration: none;
   color: #34495E;
-}
+}*/

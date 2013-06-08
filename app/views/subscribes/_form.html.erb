@@ -1,8 +1,8 @@
 <div class="login">
   <div class="login-screen">
     <div class="login-icon">
-      <img src="images/login/icon.png" alt="Welcome to Mail App" />
-      <h4>Welcome to <small>Mail App</small></h4>
+      <img src="/assets/icons/Clipboard@2x.png" alt="Welcome to Mail App" />
+      <h4>Seu nome<small>na lista!</small></h4>
     </div>
     <%= form_for(@subscribe) do |f| %>
       <% if @subscribe.errors.any? %>
@@ -18,15 +18,15 @@
       <% end %>
       <div class="login-form">
         <div class="control-group">
-          <%= f.label :name %><br />
-          <%= f.text_field :name %>
+          <%= f.text_field :name, :class => "login-field" %>
+          <%= f.label :name, :class => "login-field-icon fui-user" %>
         </div>
         <div class="control-group">
-          <%= f.label :email %><br />
-          <%= f.text_field :email %>
+          <%= f.text_field :email, :class => "login-field" %>
+          <%= f.label :email, :class => "login-field-icon fui-mail" %>
         </div>
         <div class="actions">
-          <%= f.submit %>
+          <%= f.submit "Assinar!", :class => "btn btn-primary btn-large btn-block" %>
         </div>
       </div>
     <% end %>
