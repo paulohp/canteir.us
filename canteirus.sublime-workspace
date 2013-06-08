@@ -531,7 +531,7 @@
 			"file": "app/models/company.rb",
 			"settings":
 			{
-				"buffer_size": 488,
+				"buffer_size": 471,
 				"line_ending": "Unix"
 			}
 		},
@@ -552,10 +552,34 @@
 			}
 		},
 		{
+			"file": "/home/paulo/Documentos/Flat-UI-master/index.html",
+			"settings":
+			{
+				"buffer_size": 30351,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "app/views/companies/index.html.erb",
 			"settings":
 			{
 				"buffer_size": 549,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/user.rb",
+			"settings":
+			{
+				"buffer_size": 467,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/devise/sessions/new.html.erb",
+			"settings":
+			{
+				"buffer_size": 1058,
 				"line_ending": "Unix"
 			}
 		}
@@ -1001,7 +1025,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 7,
 			"sheets":
 			[
 				{
@@ -1035,7 +1059,7 @@
 					"file": "app/models/company.rb",
 					"settings":
 					{
-						"buffer_size": 488,
+						"buffer_size": 471,
 						"regions":
 						{
 						},
@@ -1110,6 +1134,32 @@
 				},
 				{
 					"buffer": 4,
+					"file": "/home/paulo/Documentos/Flat-UI-master/index.html",
+					"settings":
+					{
+						"buffer_size": 30351,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								26051,
+								26051
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 13504.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "app/views/companies/index.html.erb",
 					"settings":
 					{
@@ -1122,6 +1172,58 @@
 							[
 								527,
 								527
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/models/user.rb",
+					"settings":
+					{
+						"buffer_size": 467,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/views/devise/sessions/new.html.erb",
+					"settings":
+					{
+						"buffer_size": 1058,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								976,
+								976
 							]
 						],
 						"settings":
