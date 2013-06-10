@@ -9,7 +9,9 @@
 <body>
 <div class="container">
   <div class="header-login">
-    <% if user_signed_in? %>
+    <% if user_signed_in? || company_signed_in? %>
+      <%= current_user %>
+      <%= current_company.name %>
       <%= link_to "Sair", destroy_user_session_path, :method => :delete %>
     <% else %>
       <%= link_to "Cadastre-se", new_user_registration_path %>
