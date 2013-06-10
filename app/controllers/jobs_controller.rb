@@ -1,11 +1,9 @@
 # utf-8
 class JobsController < InheritedResources::Base
-  before_filter :authenticate_user!, :except => [:index, :show]
+  before_filter :authenticate_company!, :except => [:index, :show]
 
   def new
     @job = current_company.jobs.build
-    @project = Project.find(params[:project_id])
-    @rewards = @project.rewards
   end
 
   # POST /tasks

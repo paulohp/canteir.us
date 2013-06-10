@@ -13,6 +13,17 @@
       <%= current_user %>
       <%= current_company.name %>
       <%= link_to "Sair", destroy_user_session_path, :method => :delete %>
+
+      <div class="span3">
+        <select name="herolist" value="<%= current_user || current_company.name %>" class="select-block span3">
+          <option value="0">Choose hero</option>
+          <option value="1">Spider Man</option>
+          <option value="2">Wolverine</option>
+          <option value="3">Captain America</option>
+          <option value="X-Men" selected="selected">X-Men</option>
+          <option value="Crocodile">Crocodile</option>
+        </select>
+      </div>
     <% else %>
       <%= link_to "Cadastre-se", new_user_registration_path %>
     <% end %>
