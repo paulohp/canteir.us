@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @resume.name %>
+</p>
+
+<p>
+  <b>Dob:</b>
+  <%= @resume.dob %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%= @resume.gender %>
+</p>
+
+<p>
+  <b>Civil:</b>
+  <%= @resume.civil %>
+</p>
+
+<p>
+  <b>Children:</b>
+  <%= @resume.children %>
+</p>
+
+<p>
+  <b>Professional objctive:</b>
+  <%= @resume.professional_objctive %>
+</p>
+
+<p>
+  <b>Job area:</b>
+  <%= @resume.job_area %>
+</p>
+
+<p>
+  <b>Mini resume:</b>
+  <%= @resume.mini_resume %>
+</p>
+
+
+<%= link_to 'Edit', edit_resume_path(@resume) %> |
+<%= link_to 'Back', resumes_path %>

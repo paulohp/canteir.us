@@ -1,4 +1,7 @@
 Canteiro::Application.routes.draw do
+  resources :resumes
+
+
   devise_for :companies
 
   resources :companies

@@ -1,0 +1,49 @@
+<%= form_for(@resume) do |f| %>
+  <% if @resume.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@resume.errors.count, "error") %> prohibited this resume from being saved:</h2>
+
+      <ul>
+      <% @resume.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :dob %><br />
+    <%= f.text_field :dob %>
+  </div>
+  <div class="field">
+    <%= f.label :gender %><br />
+    <%= f.text_field :gender %>
+  </div>
+  <div class="field">
+    <%= f.label :civil %><br />
+    <%= f.text_field :civil %>
+  </div>
+  <div class="field">
+    <%= f.label :children %><br />
+    <%= f.text_field :children %>
+  </div>
+  <div class="field">
+    <%= f.label :professional_objctive %><br />
+    <%= f.text_field :professional_objctive %>
+  </div>
+  <div class="field">
+    <%= f.label :job_area %><br />
+    <%= f.text_field :job_area %>
+  </div>
+  <div class="field">
+    <%= f.label :mini_resume %><br />
+    <%= f.text_field :mini_resume %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

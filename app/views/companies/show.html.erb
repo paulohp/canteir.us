@@ -6,8 +6,8 @@
           <%= image_tag(@company.picture_url, :width => 84) if @company.picture.present? %>
         </div>
         <div class="demo-browser-action">
-          <a class="btn btn-danger btn-large btn-block" href="http://twitter.com/monstercritic" target="_blank">
-            Follow
+          <a class="btn btn-danger btn-large btn-block" href="<%= new_job_path %>" target="_blank">
+            Nova Vaga
           </a>
         </div>
         <h5><%= @company.name %></h5>
@@ -18,12 +18,13 @@
       </div>
       <div class="demo-browser-content">
         <h4>Vagas Cadastradas</h4>
-        <img src="images/demo/browser-pic-1.jpg" alt="" />
-        <img src="images/demo/browser-pic-2.jpg" alt="" />
-        <img src="images/demo/browser-pic-3.jpg" alt="" />
-        <img src="images/demo/browser-pic-4.jpg" alt="" />
-        <img src="images/demo/browser-pic-5.jpg" alt="" />
-        <img src="images/demo/browser-pic-6.jpg" alt="" />
+        <% @jobs.each do |job| %>
+          <%= link_to job do %>
+            <div class="span2">
+              <%= job.title %>
+            </div>
+          <% end %>
+        <% end %>
       </div>
     </div>
   </div>
