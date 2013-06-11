@@ -7,5 +7,7 @@ class Company < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me, :location, :name
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :location, :name, :picture, :category, :website
+
+  mount_uploader :picture, PictureUploader
 end
