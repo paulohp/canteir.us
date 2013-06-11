@@ -2,7 +2,9 @@
   <div class="span12">
     <div class="demo-browser">
       <div class="demo-browser-side">
-        <div class="demo-browser-author"></div>
+        <div class="demo-browser-author">
+          <%= image_tag(@company.picture_url, :width => 84) if @company.picture.present? %>
+        </div>
         <div class="demo-browser-action">
           <a class="btn btn-danger btn-large btn-block" href="http://twitter.com/monstercritic" target="_blank">
             Follow

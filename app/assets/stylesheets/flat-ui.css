@@ -358,8 +358,7 @@ you can use the generic selector below, but it's slower:
   margin-top: 3px;
   text-transform: none;
 }
-.demo-browser-author {
-  background: url(/assets/demo/browser-author.jpg) center center no-repeat;
+.demo-browser-author img {
   border: 3px solid #ffffff;
   display: block;
   height: 84px;
