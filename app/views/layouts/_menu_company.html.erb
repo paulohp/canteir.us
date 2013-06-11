@@ -1,0 +1,16 @@
+<div class="span3">
+  <% if company_signed_in? %>
+    <select name="herolist" value="<%= current_company.name %>" class="select-block span3">
+      <option value="0" selected="selected"><%= current_company.name %></option>
+      <option value="1"><%= link_to "Perfil", company_path(current_company.id) %></option>
+      <option value="2">Minhas Vagas</option>
+      <option value="3">Configurações</option>
+      <option value="4"><%= link_to "Sair", destroy_user_session_path, :method => :delete %></option>
+    </select>
+  <% else %>
+    <select name="herolist" value="<%= link_to "Cadastre-se", new_user_registration_path %>" class="select-block span3">
+      <option value="0" selected="selected"><%= link_to "Cadastre-se", new_company_registration_path %></option>
+      <option value="1"><%= link_to "Login", new_company_session_path %></option>
+    </select>
+  <% end %>
+</div>

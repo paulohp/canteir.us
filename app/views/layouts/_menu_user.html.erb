@@ -1,0 +1,17 @@
+<div class="span3">
+  <% if user_signed_in? %>
+    <select name="herolist" value="<%= current_user.name %>" class="select-block span3">
+      <option value="0" selected="selected"><%= current_user.name %></option>
+      <option value="1"><%= link_to "Perfil", user_path(current_user.id) %></option>
+      <option value="2">Minhas Vagas</option>
+      <option value="3">Curriculo</option>
+      <option value="4">Configurações</option>
+      <option value="5"><%= link_to "Sair", destroy_user_session_path, :method => :delete %></option>
+    </select>
+  <% else %>
+    <select name="herolist" value="<%= link_to "Cadastre-se", new_user_registration_path %>" class="select-block span3">
+      <option value="0" selected="selected"><%= link_to "Cadastre-se", new_user_registration_path %></option>
+      <option value="1"><%= link_to "Login", new_user_session_path %></option>
+    </select>
+  <% end %>
+</div>
