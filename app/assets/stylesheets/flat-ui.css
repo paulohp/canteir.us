@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700,700italic,900,400italic,300");
+/*@import url("https://fonts.googleapis.com/css?family=Lato:400,700,700italic,900,400italic,300");*/
 @font-face {
   font-family: 'Flat-UI-Icons';
   src: url(font-path('Flat-UI-Icons.eot'));
@@ -333,11 +333,11 @@ you can use the generic selector below, but it's slower:
   color: #1abc9c;
 }
 .demo-browser {
-  background: #2c3e50 url(/assets/demo/browser.png) 0 0 no-repeat;
+  background: #2c3e50 0 0 no-repeat;
   background-size: 659px 42px;
   color: #ffffff;
   margin: 0 41px 140px 0;
-  padding-top: 42px;
+  padding-top: 12px;
   -webkit-border-radius: 0 0 6px 6px;
   -moz-border-radius: 0 0 6px 6px;
   border-radius: 0 0 6px 6px;
