@@ -4,8 +4,13 @@ Canteiro::Application.routes.draw do
   devise_for :users
 
   resources :companies
-  resources :users
   resources :resumes
+  resources :users do
+    resources :resumes do
+      match 'users/:user_id/resumes/:id' => "resumes#show"
+    end
+  end
+
   resources :jobs
 
 
