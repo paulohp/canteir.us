@@ -616,10 +616,10 @@
 			}
 		},
 		{
-			"file": "Gemfile",
+			"file": "config/routes.rb",
 			"settings":
 			{
-				"buffer_size": 947,
+				"buffer_size": 1898,
 				"line_ending": "Unix"
 			}
 		}
@@ -672,6 +672,7 @@
 	},
 	"file_history":
 	[
+		"/projetos/rails/canteir.us/Gemfile",
 		"/projetos/rails/canteir.us/app/views/companies/_form.html.erb",
 		"/projetos/rails/canteir.us/app/assets/stylesheets/flat-ui.css",
 		"/projetos/rails/canteir.us/app/views/subscribes/new.html.erb",
@@ -798,8 +799,7 @@
 		"/projetos/rails/smartconvites/app/views/covers/index.html.erb",
 		"/projetos/rails/smartconvites/app/views/orders/payment_info.html.erb",
 		"/projetos/rails/smartconvites/app/models/cover.rb",
-		"/home/paulo/.config/sublime-text-2/Packages/Emmet/Default (Linux).sublime-keymap",
-		"/home/paulo/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap"
+		"/home/paulo/.config/sublime-text-2/Packages/Emmet/Default (Linux).sublime-keymap"
 	],
 	"find":
 	{
@@ -1186,8 +1186,8 @@
 						"selection":
 						[
 							[
-								203,
-								203
+								271,
+								271
 							]
 						],
 						"settings":
@@ -1384,18 +1384,18 @@
 				},
 				{
 					"buffer": 12,
-					"file": "Gemfile",
+					"file": "config/routes.rb",
 					"settings":
 					{
-						"buffer_size": 947,
+						"buffer_size": 1898,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								51,
-								51
+								63,
+								63
 							]
 						],
 						"settings":
@@ -1461,12 +1461,16 @@
 		"selected_items":
 		[
 			[
-				"com",
-				"app/models/company.rb"
-			],
-			[
 				"route",
 				"config/routes.rb"
+			],
+			[
+				"_men",
+				"app/views/layouts/_menu_user.html.erb"
+			],
+			[
+				"com",
+				"app/models/company.rb"
 			],
 			[
 				"app",
@@ -1967,10 +1971,6 @@
 			[
 				"chan",
 				"afimdetrocar.com.br/app/Controller/ChangesController.php"
-			],
-			[
-				"vie",
-				"afimdetrocar.com.br/app/View/Products/view.ctp"
 			]
 		],
 		"width": 0.0
@@ -1980,6 +1980,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"_oc",
+				"/projetos/rails/tasklist/_octo.sublime-project"
+			],
 			[
 				"mus",
 				"/projetos/rails/musicstartme-app/musicstartme.sublime-project"
@@ -2011,10 +2015,6 @@
 			[
 				"sm",
 				"/projetos/rails/smartconvites/smartconvites.sublime-project"
-			],
-			[
-				"_oc",
-				"/projetos/rails/tasklist/_octo.sublime-project"
 			],
 			[
 				"sma",
