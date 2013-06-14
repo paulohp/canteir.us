@@ -1,7 +1,7 @@
 <div class="span3">
   <% if user_signed_in? %>
-    <select name="herolist" value="<%= current_user.name %>" class="select-block span3">
-      <option value="0" selected="selected"><%= current_user.name %></option>
+    <select name="herolist" value="<%= current_user.email %>" class="select-block span3">
+      <option value="0" selected="selected"><%= current_user.email %></option>
       <option value="1"><%= link_to "Perfil", user_path(current_user.id) %></option>
       <option value="2">Minhas Vagas</option>
       <option value="3">Curriculo</option>
