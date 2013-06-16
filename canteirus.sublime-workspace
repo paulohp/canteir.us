@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"res",
+				"resumes"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
 				"se",
 				"select"
 			],
@@ -210,10 +218,6 @@
 			[
 				"mar",
 				"margin-top"
-			],
-			[
-				"user",
-				"user_signed_in"
 			],
 			[
 				"wi",
@@ -510,28 +514,40 @@
 			[
 				"qu",
 				"quot"
-			],
-			[
-				"cons",
-				"console"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/assets/stylesheets/application.css",
+			"file": "app/controllers/users_controller.rb",
 			"settings":
 			{
-				"buffer_size": 1133,
+				"buffer_size": 53,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/jobs/index.html.erb",
+			"file": "app/views/users/show.html.erb",
 			"settings":
 			{
-				"buffer_size": 414,
+				"buffer_size": 162,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/user.rb",
+			"settings":
+			{
+				"buffer_size": 485,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/resume.rb",
+			"settings":
+			{
+				"buffer_size": 174,
 				"line_ending": "Unix"
 			}
 		},
@@ -539,79 +555,7 @@
 			"file": "app/views/layouts/application.html.erb",
 			"settings":
 			{
-				"buffer_size": 1626,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/layouts/_menu_company.html.erb",
-			"settings":
-			{
-				"buffer_size": 885,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/layouts/_menu_user.html.erb",
-			"settings":
-			{
-				"buffer_size": 908,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/controllers/jobs_controller.rb",
-			"settings":
-			{
-				"buffer_size": 648,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/layouts/_footer.html.erb",
-			"settings":
-			{
-				"buffer_size": 1683,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/companies/index.html.erb",
-			"settings":
-			{
-				"buffer_size": 410,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/companies/show.html.erb",
-			"settings":
-			{
-				"buffer_size": 934,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/company.rb",
-			"settings":
-			{
-				"buffer_size": 546,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/controllers/companies_controller.rb",
-			"settings":
-			{
-				"buffer_size": 209,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/assets/stylesheets/companies.css.scss",
-			"settings":
-			{
-				"buffer_size": 217,
+				"buffer_size": 1715,
 				"line_ending": "Unix"
 			}
 		},
@@ -619,7 +563,7 @@
 			"file": "config/routes.rb",
 			"settings":
 			{
-				"buffer_size": 1898,
+				"buffer_size": 2018,
 				"line_ending": "Unix"
 			}
 		}
@@ -672,23 +616,28 @@
 	},
 	"file_history":
 	[
+		"/projetos/rails/canteir.us/app/assets/stylesheets/companies.css.scss",
+		"/projetos/rails/canteir.us/app/controllers/companies_controller.rb",
+		"/projetos/rails/canteir.us/app/models/company.rb",
+		"/projetos/rails/canteir.us/app/views/companies/show.html.erb",
+		"/projetos/rails/canteir.us/app/views/companies/index.html.erb",
+		"/projetos/rails/canteir.us/app/views/layouts/_footer.html.erb",
+		"/projetos/rails/canteir.us/app/controllers/jobs_controller.rb",
+		"/projetos/rails/canteir.us/app/views/layouts/_menu_user.html.erb",
+		"/projetos/rails/canteir.us/app/views/layouts/_menu_company.html.erb",
+		"/projetos/rails/canteir.us/app/views/layouts/application.html.erb",
+		"/projetos/rails/canteir.us/app/views/jobs/index.html.erb",
+		"/projetos/rails/canteir.us/app/assets/stylesheets/application.css",
+		"/projetos/rails/canteir.us/config/routes.rb",
 		"/projetos/rails/canteir.us/Gemfile",
 		"/projetos/rails/canteir.us/app/views/companies/_form.html.erb",
 		"/projetos/rails/canteir.us/app/assets/stylesheets/flat-ui.css",
 		"/projetos/rails/canteir.us/app/views/subscribes/new.html.erb",
-		"/projetos/rails/canteir.us/app/views/layouts/application.html.erb",
-		"/projetos/rails/canteir.us/config/routes.rb",
-		"/projetos/rails/canteir.us/app/views/companies/index.html.erb",
-		"/projetos/rails/canteir.us/app/controllers/companies_controller.rb",
 		"/projetos/rails/canteir.us/app/models/job.rb",
-		"/projetos/rails/canteir.us/app/models/company.rb",
 		"/projetos/rails/canteir.us/app/assets/javascripts/application.js",
 		"/projetos/rails/canteir.us/app/views/subscribes/_form.html.erb",
-		"/projetos/rails/canteir.us/app/views/layouts/_footer.html.erb",
 		"/projetos/rails/canteir.us/db/migrate/20130605015642_add_company_id_to_jobs.rb",
 		"/projetos/rails/canteir.us/config/application.rb",
-		"/projetos/rails/canteir.us/app/controllers/jobs_controller.rb",
-		"/projetos/rails/canteir.us/app/assets/stylesheets/application.css",
 		"/projetos/rails/canteir.us/app/views/devise/sessions/new.html.erb",
 		"/projetos/rails/canteir.us/app/assets/javascripts/z_application_c.js",
 		"/projetos/rails/canteir.us/app/assets/javascripts/application_b.js",
@@ -794,12 +743,7 @@
 		"/projetos/rails/smartconvites/app/helpers/orders_helper.rb",
 		"/projetos/rails/smartconvites/app/assets/javascripts/orders.js.coffee",
 		"/projetos/rails/smartconvites/app/assets/javascripts/invitations.js.coffee",
-		"/projetos/rails/smartconvites/.gitignore",
-		"/projetos/rails/smartconvites/app/controllers/covers_controller.rb",
-		"/projetos/rails/smartconvites/app/views/covers/index.html.erb",
-		"/projetos/rails/smartconvites/app/views/orders/payment_info.html.erb",
-		"/projetos/rails/smartconvites/app/models/cover.rb",
-		"/home/paulo/.config/sublime-text-2/Packages/Emmet/Default (Linux).sublime-keymap"
+		"/projetos/rails/smartconvites/.gitignore"
 	],
 	"find":
 	{
@@ -818,6 +762,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"job",
 			"company",
 			"<td>",
 			"</td>",
@@ -944,8 +889,7 @@
 			"images",
 			"../images",
 			"../assets",
-			"footer",
-			"margin-top:;"
+			"footer"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1067,28 +1011,28 @@
 	"groups":
 	[
 		{
-			"selected": 12,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/assets/stylesheets/application.css",
+					"file": "app/controllers/users_controller.rb",
 					"settings":
 					{
-						"buffer_size": 1133,
+						"buffer_size": 53,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								48,
+								48
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1098,18 +1042,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/views/jobs/index.html.erb",
+					"file": "app/views/users/show.html.erb",
 					"settings":
 					{
-						"buffer_size": 414,
+						"buffer_size": 162,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								414,
-								414
+								80,
+								80
 							]
 						],
 						"settings":
@@ -1124,23 +1068,23 @@
 				},
 				{
 					"buffer": 2,
-					"file": "app/views/layouts/application.html.erb",
+					"file": "app/models/user.rb",
 					"settings":
 					{
-						"buffer_size": 1626,
+						"buffer_size": 485,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								338,
-								338
+								49,
+								49
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1150,23 +1094,23 @@
 				},
 				{
 					"buffer": 3,
-					"file": "app/views/layouts/_menu_company.html.erb",
+					"file": "app/models/resume.rb",
 					"settings":
 					{
-						"buffer_size": 885,
+						"buffer_size": 174,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								885,
-								885
+								169,
+								169
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1176,18 +1120,18 @@
 				},
 				{
 					"buffer": 4,
-					"file": "app/views/layouts/_menu_user.html.erb",
+					"file": "app/views/layouts/application.html.erb",
 					"settings":
 					{
-						"buffer_size": 908,
+						"buffer_size": 1715,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								271,
-								271
+								676,
+								676
 							]
 						],
 						"settings":
@@ -1202,200 +1146,18 @@
 				},
 				{
 					"buffer": 5,
-					"file": "app/controllers/jobs_controller.rb",
-					"settings":
-					{
-						"buffer_size": 648,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								171,
-								171
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/views/layouts/_footer.html.erb",
-					"settings":
-					{
-						"buffer_size": 1683,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								942,
-								942
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "app/views/companies/index.html.erb",
-					"settings":
-					{
-						"buffer_size": 410,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								114,
-								114
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "app/views/companies/show.html.erb",
-					"settings":
-					{
-						"buffer_size": 934,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								806,
-								806
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "app/models/company.rb",
-					"settings":
-					{
-						"buffer_size": 546,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								541,
-								541
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "app/controllers/companies_controller.rb",
-					"settings":
-					{
-						"buffer_size": 209,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								198,
-								198
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "app/assets/stylesheets/companies.css.scss",
-					"settings":
-					{
-						"buffer_size": 217,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								215,
-								215
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
 					"file": "config/routes.rb",
 					"settings":
 					{
-						"buffer_size": 1898,
+						"buffer_size": 2018,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								63,
-								63
+								267,
+								267
 							]
 						],
 						"settings":
@@ -1461,6 +1223,14 @@
 		"selected_items":
 		[
 			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"app",
+				"app/views/layouts/application.html.erb"
+			],
+			[
 				"route",
 				"config/routes.rb"
 			],
@@ -1471,10 +1241,6 @@
 			[
 				"com",
 				"app/models/company.rb"
-			],
-			[
-				"app",
-				"app/views/layouts/application.html.erb"
 			],
 			[
 				"sho",
@@ -1813,10 +1579,6 @@
 				"app/views/devise/registrations/new.html.erb"
 			],
 			[
-				"rout",
-				"config/routes.rb"
-			],
-			[
 				"i",
 				"app/controllers/invitations_controller.rb"
 			],
@@ -1980,6 +1742,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"ba",
+				"/projetos/padrino/battlemusic.in/battlemusic.sublime-project"
+			],
 			[
 				"_oc",
 				"/projetos/rails/tasklist/_octo.sublime-project"
