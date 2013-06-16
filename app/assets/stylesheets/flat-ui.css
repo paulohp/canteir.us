@@ -185,7 +185,7 @@ you can use the generic selector below, but it's slower:
   text-align: center;
 }
 .demo-logo {
-  font-size: 90px;
+  font-size: 80px;
   font-weight: 900;
   letter-spacing: -2px;
   line-height: 100px;
