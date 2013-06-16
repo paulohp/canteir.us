@@ -2,12 +2,16 @@
 class JobsController < InheritedResources::Base
   before_filter :authenticate_company!, :except => [:index, :show]
 
-  def new
-    @job = current_company.jobs.build
+  def index
+    if params[:search]
+      @jobs = Job.search(params[:search]).order("created_at DESC")
+    else
+      @jobs = Job.order("created_at DESC")
+    end
   end
 
-  def search
-    @job = Project.search(params[:search]).paginate(:page => params[:page])
+  def new
+    @job = current_company.jobs.build
   end
 
   # POST /tasks
