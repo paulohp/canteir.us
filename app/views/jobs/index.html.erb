@@ -1,8 +1,8 @@
 <div id="search">
   <%= form_tag jobs_path, :method => 'get' do %>
     <p>
-      <%= text_field_tag :search, params[:search] %>
-      <%= submit_tag "Search", :name => nil %>
+      <%= text_field_tag :search, params[:search], :class => "span9" %>
+      <%= submit_tag "Buscar", :name => nil, :class => "span3 btn btn-large btn-warning" %>
     </p>
   <% end %>
 </div>
