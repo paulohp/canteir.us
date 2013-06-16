@@ -22,7 +22,7 @@
     </h1>
     <ul class="left top-menu">
       <li><%= link_to 'Vagas', jobs_path %></li>
-      <% if user_signed_in? %><li><%= link_to 'Curriculo', user_resumes_path(current_user.id, current_user.resume.id) %></li> <% end %>
+      <% if user_signed_in? %><li><%= link_to 'Curriculo',"users/#{current_user.id}/resumes/#{current_user.resume.id}" %></li> <% end %>
       <li><%= link_to 'Empresas', companies_path %></li>
     </ul>
   </div> <!-- /demo-headline -->

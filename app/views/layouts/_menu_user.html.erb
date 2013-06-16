@@ -1,4 +1,4 @@
-<div class="span3">
+<div class="span3" style="float:right;margin-right:-30px;">
   <% if user_signed_in? %>
     <select name="herolist" value="<%= current_user.email %>" class="select-block span3">
       <option value="0" selected="selected"><%= current_user.email %></option>
