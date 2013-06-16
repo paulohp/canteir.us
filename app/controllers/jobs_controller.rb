@@ -6,6 +6,10 @@ class JobsController < InheritedResources::Base
     @job = current_company.jobs.build
   end
 
+  def search
+    @job = Project.search(params[:search]).paginate(:page => params[:page])
+  end
+
   # POST /tasks
   # POST /tasks.json
   def create
