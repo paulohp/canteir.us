@@ -1,5 +1,8 @@
 <p id="notice"><%= notice %></p>
-
+<p>
+  <b>photo:</b>
+  <%= image_tag avatar_url(@user, 200) %>
+</p>
 <p>
   <b>email:</b>
   <%= @user.email %>
