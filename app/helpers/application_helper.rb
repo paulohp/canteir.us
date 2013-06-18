@@ -15,4 +15,11 @@ module ApplicationHelper
     "http://gravatar.com/avatar/#{gravatar_id}.png?s=#{size}"
   end
 
+  def btn_criar_editar_curriculo resume
+    if resume == nil
+      link_to "Curriculo", "/users/#{current_user.id}/resumes/new", :class => "btn btn-danger btn-block"
+    else
+      link_to "Editar Curriculo", "/users/#{current_user.id}/resumes/#{current_user.resume.id}/edit", :class => "btn btn-danger btn-block"
+    end
+  end
 end
