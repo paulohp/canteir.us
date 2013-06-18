@@ -1,12 +1,29 @@
 <p id="notice"><%= notice %></p>
-<p>
-  <b>photo:</b>
-  <%= image_tag avatar_url(@user, 200) %>
-</p>
-<p>
-  <b>email:</b>
-  <%= @user.email %>
-</p>
-
+<div class="row">
+  <div class="span12">
+    <div class="demo-browser">
+      <div class="demo-browser-side">
+        <div class="demo-browser-author">
+          <%= image_tag avatar_url(@user, 200) %>
+        </div>
+        <div class="demo-browser-action">
+          <a class="btn btn-danger btn-large btn-block" href="<%= new_job_path %>" target="_blank">
+            Nova Vaga
+          </a>
+        </div>
+        <h5><%= @user.name %></h5>
+        <h6>
+          <%= @user.email %>
+          <%= @user.location %>
+          <a href="http://shmidt.in" target="_blank">shmidt.in</a>
+        </h6>
+      </div>
+      <div class="demo-browser-content">
+        <h4>Vagas Cadastradas</h4>
+        <!--CRUD DAS VAGAS CADASTRADAS -->
+      </div>
+    </div>
+  </div>
+</div>
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
