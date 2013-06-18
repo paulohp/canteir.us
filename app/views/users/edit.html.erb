@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="span12">
+    <div class="demo-browser">
+      <div class="demo-browser-side">
+        <div class="demo-browser-author">
+          <%= image_tag avatar_url(@user, 200) %>
+        </div>
+        <div class="demo-browser-action">
+          <%= btn_criar_editar_curriculo @user.resume %>
+        </div>
+        <h5><%= @user.name %></h5>
+        <h6>
+          <%= @user.email %>
+          <%= @user.location %>
+          <a href="http://shmidt.in" target="_blank">shmidt.in</a>
+        </h6>
+      </div>
+      <div class="demo-browser-content">
+        <h4>Editar Perfil</h4>
+        <%= form_for @user do |f| %>
+        <div class="field">
+          <%= f.label :name %><br />
+          <%= f.text_field :name %>
+        </div>
+        <div class="field">
+          <%= f.label :location %><br />
+          <%= f.text_field :location %>
+        </div>
+        <div class="field">
+          <%= f.label :bio %><br />
+          <%= f.text_area :bio %>
+        </div>
+        <div class="actions">
+          <%= f.submit %>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
