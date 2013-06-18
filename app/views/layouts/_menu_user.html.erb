@@ -11,7 +11,7 @@
   <% else %>
     <select name="herolist" value="Cadastre-se" class="select-block span3" onchange="location = this.options[this.selectedIndex].value;">
       <option value="<%= new_user_registration_path %>" selected="selected">Cadastre-se</option>
-      <option value="<%=new_user_session_path%>">Login</option>
+      <option value="<%= new_user_session_path %>">Login</option>
     </select>
   <% end %>
 </div>
