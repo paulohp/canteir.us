@@ -4,7 +4,7 @@
       <option value="/" selected="selected"><%= current_company.name %></option>
       <option value="<%= company_path(current_company.id) %>"><%= link_to "Perfil", company_path(current_company.id) %></option>
       <option value="2">Minhas Vagas</option>
-      <option value="<%= company_path %>">Configurações</option>
+      <option value="/companies/<%= current_company.id %>/edit">Configurações</option>
       <option value="<%= destroy_user_session_path %>"><%= link_to "Sair", destroy_user_session_path, :method => :delete %></option>
     </select>
   <% else %>
