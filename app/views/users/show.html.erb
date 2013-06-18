@@ -7,8 +7,8 @@
           <%= image_tag avatar_url(@user, 200) %>
         </div>
         <div class="demo-browser-action">
-          <a class="btn btn-danger btn-large btn-block" href="<%= new_job_path %>" target="_blank">
-            Nova Vaga
+          <a class="btn btn-danger btn-block" href="<%= link_to_resume @user.resume %>" target="_blank">
+            Editar Curriculo
           </a>
         </div>
         <h5><%= @user.name %></h5>
