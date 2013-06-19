@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"for",
+				"form_for"
+			],
+			[
 				"new",
 				"new_job_path"
 			],
@@ -448,10 +452,6 @@
 				"current_user"
 			],
 			[
-				"for",
-				"form_tag"
-			],
-			[
 				"cu",
 				"current_user"
 			],
@@ -523,7 +523,7 @@
 			"file": "app/helpers/application_helper.rb",
 			"settings":
 			{
-				"buffer_size": 830,
+				"buffer_size": 921,
 				"line_ending": "Unix"
 			}
 		},
@@ -579,7 +579,23 @@
 			"file": "app/controllers/resumes_controller.rb",
 			"settings":
 			{
-				"buffer_size": 1306,
+				"buffer_size": 1319,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/resumes/_form.html.erb",
+			"settings":
+			{
+				"buffer_size": 1214,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/users/edit.html.erb",
+			"settings":
+			{
+				"buffer_size": 1157,
 				"line_ending": "Unix"
 			}
 		}
@@ -1028,7 +1044,7 @@
 	"groups":
 	[
 		{
-			"selected": 7,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1036,15 +1052,15 @@
 					"file": "app/helpers/application_helper.rb",
 					"settings":
 					{
-						"buffer_size": 830,
+						"buffer_size": 921,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								772,
-								772
+								909,
+								909
 							]
 						],
 						"settings":
@@ -1052,7 +1068,7 @@
 							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 72.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1069,8 +1085,8 @@
 						"selection":
 						[
 							[
-								345,
-								345
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1156,7 +1172,7 @@
 							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 7056.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1218,15 +1234,15 @@
 					"file": "app/controllers/resumes_controller.rb",
 					"settings":
 					{
-						"buffer_size": 1306,
+						"buffer_size": 1319,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								321,
-								321
+								439,
+								439
 							]
 						],
 						"settings":
@@ -1234,7 +1250,59 @@
 							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 126.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/views/resumes/_form.html.erb",
+					"settings":
+					{
+						"buffer_size": 1214,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1153,
+								1153
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 486.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/views/users/edit.html.erb",
+					"settings":
+					{
+						"buffer_size": 1157,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1084,
+								1084
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1291,6 +1359,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"form",
+				"app/views/resumes/_form.html.erb"
+			],
 			[
 				"re",
 				"app/controllers/resumes_controller.rb"
@@ -1736,10 +1808,6 @@
 				"app/controllers/cart_controller.rb"
 			],
 			[
-				"form",
-				"app/views/admin/invitations/_form.html.erb"
-			],
-			[
 				"invi",
 				"app/models/invitation.rb"
 			],
@@ -1869,7 +1937,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 307.0,
 	"status_bar_visible": true
 }
