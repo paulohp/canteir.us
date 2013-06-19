@@ -13,3 +13,16 @@
     }
   }
 }
+.field{
+  .textarea{
+    width: 94%;
+    height: 120px;
+  }
+  input[type="text"]{
+    width: 94%;
+  }
+  input[type="submit"].btn-block{
+    float:right;
+    width: 98%!important;
+  }
+}

@@ -368,7 +368,7 @@ you can use the generic selector below, but it's slower:
   border-radius: 50%;
 }
 .demo-browser-action {
-  padding: 30px 0 12px;
+  padding: 10px 0 22px;
 }
 .demo-browser-action > .btn {
   padding: 9px 0 10px 11px !important;

@@ -6,16 +6,15 @@
         <div class="demo-browser-author">
           <%= image_tag avatar_url(@user, 200) %>
         </div>
-        <div class="demo-browser-action">
-          <%= btn_criar_editar_curriculo @user.resume %>
-          <%= btn_editar_perfil @user %>
-        </div>
         <h5><%= @user.name %></h5>
         <h6>
           <%= @user.email %>
           <%= @user.location %>
-          <a href="http://shmidt.in" target="_blank">shmidt.in</a>
         </h6>
+        <div class="demo-browser-action">
+          <%= btn_criar_editar_curriculo @user.resume %>
+          <%= btn_editar_perfil @user %>
+        </div>
       </div>
       <div class="demo-browser-content">
         <h4>Vagas Cadastradas</h4>

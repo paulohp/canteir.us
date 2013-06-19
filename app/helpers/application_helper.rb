@@ -25,7 +25,7 @@ module ApplicationHelper
   end
 
   def btn_editar_perfil user
-    if user.name || user.bio || user.location == nil
+    if user.name == nil || user.bio == nil || user.location == nil
       link_to "Completar Perfil", "/users/#{current_user.id}/edit", :class => "btn btn-danger btn-block"
     else
       link_to "Editar Perfil", "/users/#{current_user.id}/edit", :class => "btn btn-danger btn-block"

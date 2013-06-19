@@ -6,34 +6,33 @@
         <div class="demo-browser-author">
           <%= image_tag avatar_url(@user, 200) %>
         </div>
-        <div class="demo-browser-action">
-          <%= btn_criar_editar_curriculo @user.resume %>
-          <%= btn_editar_perfil @user %>
-        </div>
         <h5><%= @user.name %></h5>
         <h6>
           <%= @user.email %>
           <%= @user.location %>
-          <a href="http://shmidt.in" target="_blank">shmidt.in</a>
         </h6>
+        <div class="demo-browser-action">
+          <%= btn_criar_editar_curriculo @user.resume %>
+          <%= btn_editar_perfil @user %>
+        </div>
       </div>
       <div class="demo-browser-content">
         <h4>Editar Perfil</h4>
         <%= form_for @user do |f| %>
         <div class="field">
-          <%= f.label :name %><br />
+          <%= f.label :name %>
           <%= f.text_field :name %>
         </div>
         <div class="field">
-          <%= f.label :location %><br />
+          <%= f.label :location %>
           <%= f.text_field :location %>
         </div>
         <div class="field">
-          <%= f.label :bio %><br />
-          <%= f.text_area :bio %>
+          <%= f.label :bio %>
+          <%= f.text_area :bio, :class => "textarea" %>
         </div>
         <div class="actions">
-          <%= f.submit %>
+          <%= f.submit "Salvar", :class => "btn btn-warning btn-block" %>
         </div>
         <% end %>
       </div>
