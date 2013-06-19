@@ -11,4 +11,7 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :name, :location, :bio, :email, :password, :password_confirmation, :remember_me
 
+  def jobs_applied
+  end
+
 end
