@@ -9,7 +9,9 @@ Canteiro::Application.routes.draw do
     resources :resumes
   end
 
-  resources :jobs
+  resources :jobs do
+    resources :applies, :only => [:create, :update]
+  end
 
   match 'users/:user_id/resumes/:id' => "resumes#show"
 
