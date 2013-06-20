@@ -1,25 +1,19 @@
-# utf-8
-class JobsController < InheritedResources::Base
-  before_filter :authenticate_company!, :except => [:index, :show, :new]
-
-  def index
-    if params[:search]
-      @jobs = Job.search(params[:search]).order("created_at DESC")
-    else
-      @jobs = Job.order("created_at DESC")
-    end
-  end
+class AppliesController < ApplicationController
+  before_filter :authenticate_company!, :except => [:index, :show]
 
   def new
-    @job = current_company.jobs.build
+    @job = Job.find(params[:job_id])
+    @resume = Resume.find(params[:resume_id])
+    @apply = @job.build_applies
   end
 
   # POST /tasks
   # POST /tasks.json
   def create
-    @job = current_company.jobs.build(params[:job])
+    @resume = Resume.find(params[:resume_id])
+    @apply = @resume.applies.find_or_initialize_by_user_id(current_user.id)
     respond_to do |format|
-      if @job.save
+      if @apply.save
         format.html { redirect_to root_path, notice: 'Vaga criada com sucesso' }
         format.json { render json: @job, status: :created, location: @job }
       else
