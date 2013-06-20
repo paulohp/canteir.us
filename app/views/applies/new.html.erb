@@ -1,0 +1,4 @@
+<%= form_for(@apply.job) do |f| %>
+  <%= f.hidden_field :resume_id, :value => current_user.resume.id %>
+  <%= f.submit %>
+<% end %>

@@ -1,6 +1,6 @@
 # utf-8
 class JobsController < InheritedResources::Base
-  before_filter :authenticate_company!, :except => [:index, :show, :new]
+
 
   def index
     if params[:search]

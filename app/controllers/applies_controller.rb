@@ -1,14 +1,11 @@
 class AppliesController < ApplicationController
-  before_filter :authenticate_company!, :except => [:index, :show]
 
   def new
     @job = Job.find(params[:job_id])
-    @resume = Resume.find(params[:resume_id])
-    @apply = @job.build_applies
+    #@resume = Resume.find(params[:resume_id])
+    @apply = @job.applies.build(params[:apply])
   end
 
-  # POST /tasks
-  # POST /tasks.json
   def create
     @resume = Resume.find(params[:resume_id])
     @apply = @resume.applies.find_or_initialize_by_user_id(current_user.id)
