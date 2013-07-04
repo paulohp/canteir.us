@@ -6,8 +6,9 @@ class AppliesController < ApplicationController
   end
 
   def create
+    @job = Job.find(params[:job_id])
     @resume = Resume.find(params[:resume_id])
-    @apply = @resume.applies.find_or_initialize_by_user_id(current_user.id)
+    @apply = Apply.create :resume_id => @resume.id, :job_id => @job.id
     respond_to do |format|
       if @apply.save
         format.html { redirect_to root_path, notice: 'Vaga criada com sucesso' }

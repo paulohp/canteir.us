@@ -5,6 +5,7 @@ Canteiro::Application.routes.draw do
 
   resources :companies
   resources :resumes
+  resources :applies
   resources :users do
     resources :resumes
   end
