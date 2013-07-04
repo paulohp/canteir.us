@@ -539,7 +539,7 @@
 			"file": "app/views/applies/new.html.erb",
 			"settings":
 			{
-				"buffer_size": 105,
+				"buffer_size": 131,
 				"line_ending": "Unix"
 			}
 		},
@@ -547,7 +547,7 @@
 			"file": "app/models/apply.rb",
 			"settings":
 			{
-				"buffer_size": 102,
+				"buffer_size": 113,
 				"line_ending": "Unix"
 			}
 		},
@@ -587,7 +587,7 @@
 			"file": "app/controllers/jobs_controller.rb",
 			"settings":
 			{
-				"buffer_size": 823,
+				"buffer_size": 751,
 				"line_ending": "Unix"
 			}
 		}
@@ -1037,7 +1037,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -1078,8 +1078,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								1178,
+								1178
 							]
 						],
 						"settings":
@@ -1087,7 +1087,7 @@
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 486.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1097,15 +1097,15 @@
 					"file": "app/views/applies/new.html.erb",
 					"settings":
 					{
-						"buffer_size": 105,
+						"buffer_size": 131,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								55,
-								55
+								106,
+								106
 							]
 						],
 						"settings":
@@ -1123,15 +1123,15 @@
 					"file": "app/models/apply.rb",
 					"settings":
 					{
-						"buffer_size": 102,
+						"buffer_size": 113,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								90,
-								90
+								108,
+								108
 							]
 						],
 						"settings":
@@ -1156,8 +1156,8 @@
 						"selection":
 						[
 							[
-								200,
-								200
+								209,
+								209
 							]
 						],
 						"settings":
@@ -1253,15 +1253,15 @@
 					"file": "app/controllers/jobs_controller.rb",
 					"settings":
 					{
-						"buffer_size": 823,
+						"buffer_size": 751,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								58,
-								58
+								56,
+								56
 							]
 						],
 						"settings":
