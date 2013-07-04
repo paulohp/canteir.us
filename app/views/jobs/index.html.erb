@@ -17,7 +17,7 @@
       <%= link_to 'Show', job %>
       <%= link_to 'Edit', edit_job_path(job) %>
       <%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %>
-      <%= link_to 'Aplicar',  "/jobs/#{job.id}/applies/new", :class => 'btn btn-block btn-success' %>
+      <%= ejob_applied?(job.id) %>
     </div>
   </div>
   <% end %>

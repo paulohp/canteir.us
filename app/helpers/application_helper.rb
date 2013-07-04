@@ -32,7 +32,19 @@ module ApplicationHelper
     end
   end
 
+  #link de submit da vaga
   def link_to_submit text, args
     link_to_function text, "$(this).closest('form').submit()", args
+  end
+
+  def ejob_applied? ejob_id
+    applicados = current_user.resume.applies
+    applicados.each do |aplicado|
+      unless aplicado.job_id == ejob_id
+        return link_to 'Aplicar', "/jobs/#{ejob_id}/applies/new", :class => 'btn btn-block btn-success'
+      else
+        return link_to 'Já Enviada', "#", :class => 'btn btn-block btn-danger'
+      end
+    end
   end
 end
