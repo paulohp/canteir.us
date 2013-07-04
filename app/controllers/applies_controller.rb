@@ -2,7 +2,6 @@ class AppliesController < ApplicationController
 
   def new
     @job = Job.find(params[:job_id])
-    #@resume = Resume.find(params[:resume_id])
     @apply = @job.applies.build(params[:apply])
   end
 

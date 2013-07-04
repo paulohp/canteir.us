@@ -1,4 +1,5 @@
-<%= form_for(@apply.job) do |f| %>
-  <%= f.hidden_field :resume_id, :value => current_user.resume.id %>
-  <%= f.submit %>
+<%= form_tag :controller => "applies", :action => "create" do %>
+  <%= hidden_field_tag :user_id, :value => current_user.id %>
+  <%= hidden_field_tag :resume_id, :value => current_user.resume.id %>
+  <%= f.submit "Aplicar" %>
 <% end %>

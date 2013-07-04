@@ -18,7 +18,12 @@
       </div>
       <div class="demo-browser-content">
         <h4>Vagas Cadastradas</h4>
-        <!--CRUD DAS VAGAS CADASTRADAS -->
+        <section>
+          <% @vagas_aplicadas.each do |vaga_aplicada| %>
+            <% trampo_aplicado = Job.find(vaga_aplicada.job_id) %>
+            <%= trampo_aplicado.title %>
+          <% end %>
+        </section>
       </div>
     </div>
   </div>

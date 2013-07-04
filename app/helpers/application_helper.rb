@@ -31,4 +31,8 @@ module ApplicationHelper
       link_to "Editar Perfil", "/users/#{current_user.id}/edit", :class => "btn btn-danger btn-block"
     end
   end
+
+  def link_to_submit text, args
+    link_to_function text, "$(this).closest('form').submit()", args
+  end
 end
