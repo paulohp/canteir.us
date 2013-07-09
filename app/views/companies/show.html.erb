@@ -18,13 +18,18 @@
       </div>
       <div class="demo-browser-content">
         <h4>Vagas Cadastradas</h4>
-        <% @jobs.each do |job| %>
-          <%= link_to job do %>
-            <div class="span2">
-              <%= job.title %>
+        <section class="span8">
+          <% @jobs.each do |job| %>
+            <div style="min-height:80px;" class="span2 palette palette-midnight-blue">
+              <%= link_to job do %>
+                <div class="span2">
+                  <%= job.title %>
+                </div>
+              <% end %>
+              <%= link_to "Ver Candidatos", job_resume_apply_path, :class => "btn btn-primary btn-large" %>
             </div>
           <% end %>
-        <% end %>
+        </section>
       </div>
     </div>
   </div>

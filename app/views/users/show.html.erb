@@ -18,11 +18,11 @@
       </div>
       <div class="demo-browser-content">
         <h4>Vagas Cadastradas</h4>
-        <section>
+        <section class="span8">
           <% @vagas_aplicadas.each do |vaga_aplicada| %>
             <% trampo_aplicado = Job.find(vaga_aplicada.job_id) %>
-            <div class="span3 palette palette-midnight-blue">
-              <header>
+            <div style="min-height:80px;" class="span2 palette palette-midnight-blue">
+              <header style="border-bottom:1px dashed grey">
                 <%= trampo_aplicado.title %>
               </header>
               <article>
@@ -30,6 +30,9 @@
               </article>
               <div>
                 <%= trampo_aplicado.location %>
+              </div>
+              <div>
+                <%= trampo_aplicado.company.name %>
               </div>
             </div>
           <% end %>

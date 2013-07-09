@@ -391,7 +391,7 @@ you can use the generic selector below, but it's slower:
 .demo-browser-content {
   background-color: #34495e;
   overflow: hidden;
-  padding: 21px 0 0 20px;
+  padding: 21px;
   -webkit-border-radius: 0 0 6px;
   -moz-border-radius: 0 0 6px;
   border-radius: 0 0 6px;

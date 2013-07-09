@@ -14,11 +14,12 @@ Canteiro::Application.routes.draw do
     resources :resumes do
       resources :applies
     end
-
   end
+
   match 'jobs/:job_id/applies/new' => "applies#new"
   match 'users/:user_id/resumes/:id' => "resumes#show"
 
+  get "/jobs/:job_id/resumes/:resume_id/applies/:id" => "applies#show"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
