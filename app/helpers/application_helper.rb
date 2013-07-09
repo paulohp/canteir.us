@@ -55,4 +55,21 @@ module ApplicationHelper
       return link_to 'Aplicar', "/jobs/#{ejob_id}/applies/new", :class => 'btn btn-block btn-success'
     end
   end
+
+  def vd (*args)
+    unless true #Rails.env.production?
+      p '                          '
+      p '   DEBUGGER START (VIEW)  '
+      p '   -   '
+      p '   -   '
+      args.each do |arg|
+        p arg
+        p '============================================='
+      end
+      p '   -   '
+      p '   -   '
+      p '   DEBUGGER END (VIEW)    '
+      p '                          '
+    end
+  end
 end

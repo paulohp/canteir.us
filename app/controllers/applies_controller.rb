@@ -11,10 +11,10 @@ class AppliesController < ApplicationController
     @apply = Apply.create :resume_id => @resume.id, :job_id => @job.id
     respond_to do |format|
       if @apply.save
-        format.html { redirect_to root_path, notice: 'Vaga criada com sucesso' }
+        format.html { redirect_to root_path, notice: 'Aplicada com sucesso' }
         format.json { render json: @job, status: :created, location: @job }
       else
-        format.html { render action: "new" }
+        format.html { render action: "new", notice: "Deu Erro" }
         format.json { render json: @job.errors, status: :unprocessable_entity }
       end
     end
