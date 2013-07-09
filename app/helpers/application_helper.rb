@@ -40,11 +40,15 @@ module ApplicationHelper
   def ejob_applied? ejob_id
     if user_signed_in?
       applicados = current_user.resume.applies
-      applicados.each do |aplicado|
-        unless aplicado.job_id == ejob_id
-          return link_to 'Aplicar', "/jobs/#{ejob_id}/applies/new", :class => 'btn btn-block btn-success'
-        else
-          return link_to 'Já Enviada', "#", :class => 'btn btn-block btn-danger'
+      if applicados == []
+        return link_to 'Aplicar', "/jobs/#{ejob_id}/applies/new", :class => 'btn btn-block btn-success'
+      else
+        applicados.each do |aplicado|
+          unless aplicado.job_id == ejob_id
+            return link_to 'Aplicar', "/jobs/#{ejob_id}/applies/new", :class => 'btn btn-block btn-success'
+          else
+            return link_to 'Já Enviada', "#", :class => 'btn btn-block btn-danger'
+          end
         end
       end
     else
