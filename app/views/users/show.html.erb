@@ -21,7 +21,17 @@
         <section>
           <% @vagas_aplicadas.each do |vaga_aplicada| %>
             <% trampo_aplicado = Job.find(vaga_aplicada.job_id) %>
-            <%= trampo_aplicado.title %>
+            <div class="span3 palette palette-midnight-blue">
+              <header>
+                <%= trampo_aplicado.title %>
+              </header>
+              <article>
+                <%= trampo_aplicado.description %>
+              </article>
+              <div>
+                <%= trampo_aplicado.location %>
+              </div>
+            </div>
           <% end %>
         </section>
       </div>

@@ -7,6 +7,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<% flash.each do |key, value| %>
+    <% vd('APP HTML', key, value, flash.count) %>
+    <% unless flash[key].blank? %>
+      <div class="flash <%= key %>">
+        <%= value %>
+      </div>
+    <% end %>
+  <% end %>
 <div class="container">
   <div class="span11 header-login">
     <% if user_signed_in? %>

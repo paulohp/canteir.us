@@ -1,5 +1,5 @@
 class AppliesController < ApplicationController
-
+  before_filter :authenticate_user!, :except => [:show, :index]  
   def new
     @job = Job.find(params[:job_id])
     @apply = @job.applies.build(params[:apply])
