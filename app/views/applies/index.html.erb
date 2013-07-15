@@ -1,7 +1,12 @@
-<div>
-  <% @applies.each do |applies| %>
-    <% curriculo = Resume.find(applies.resume_id) %>
-    <span><%= applies.id %></span>
-    <header><%= curriculo.name %></header>
-  <% end %>
+<div class="row">
+  <div class="span12">
+    <% @applies.each do |applies| %>
+      <% curriculo = Resume.find(applies.resume_id) %>
+      <span><%= applies.id %></span>
+      <header><%= curriculo.name %></header>
+    <% end %>
+
+    <%= link_to "Convocar pra entrevista", "#", :class => "btn btn-info btn-large" %>
+    <%= link_to "Cancelar", "#", :class => "btn btn-danger btn-large" %>
+  </div>
 </div>
