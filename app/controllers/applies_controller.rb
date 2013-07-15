@@ -1,6 +1,15 @@
 class AppliesController < ApplicationController
   before_filter :authenticate_user!, :except => [:show, :index]
 
+  def index
+    @job = Job.find(params[:job_id])
+    @applies = @job.applies
+    respond_to do |format|
+      format.html
+      format.json
+    end
+  end
+
   def show
     
   end
