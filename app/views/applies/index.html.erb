@@ -1,5 +1,7 @@
 <div>
   <% @applies.each do |applies| %>
+    <% curriculo = Resume.find(applies.resume_id) %>
     <span><%= applies.id %></span>
+    <header><%= curriculo.name %></header>
   <% end %>
 </div>
