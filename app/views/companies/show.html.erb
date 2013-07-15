@@ -26,7 +26,7 @@
                   <%= job.title %>
                 </div>
               <% end %>
-              <%= link_to "Ver Candidatos", job_resume_apply_path, :class => "btn btn-primary btn-large" %>
+              <%= link_to "Ver Candidatos", "/jobs/#{job.id}/applies/", :class => "btn btn-primary btn-large" %>
             </div>
           <% end %>
         </section>
