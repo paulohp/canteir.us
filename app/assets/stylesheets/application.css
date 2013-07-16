@@ -49,3 +49,19 @@
   text-decoration: none;
   color: #34495E;
 }
+.my_jobs{
+  margin: 20px 0;
+}
+.my_jobs header, 
+.my_jobs article{
+  text-align: left;
+}
+.my_jobs aside{
+  text-align: right;
+}
+.right{
+  float: right!important;
+}
+.left{
+  float: left!important;
+}

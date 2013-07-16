@@ -1,13 +1,19 @@
 <div class="row">
   <div class="span12">
     <% @jobs.each do |job| %>
-      <div class="row tile">
-        <header>
+      <div class="row tile my_jobs">
+        <header class="span6">
           <h3>
             <%= job.title %><small>(3 vagas)</small>
           </h3>
         </header>
-        <article>
+        <aside class="right span4">
+          <span><strong>Código:</strong> 376459</span> 
+          <span><strong>Data:</strong> 03/07/2013</span><br />
+          <span><strong>SAO PAULO/SP </span><br />
+          <span><strong>Salário:</strong> A combinar</span>
+        </aside>
+        <article class="span8">
           <span>
             <%= job.description %>
           </span>
