@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130716020614) do
+ActiveRecord::Schema.define(:version => 20130716023918) do
 
   create_table "applies", :force => true do |t|
     t.integer  "resume_id"
@@ -51,11 +51,12 @@ ActiveRecord::Schema.define(:version => 20130716020614) do
     t.string   "category"
     t.text     "description"
     t.string   "location"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
     t.integer  "company_id"
     t.string   "role"
     t.string   "salary"
+    t.string   "number_of_vacancies"
   end
 
   add_index "jobs", ["company_id"], :name => "index_jobs_on_company_id"
