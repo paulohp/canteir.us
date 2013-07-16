@@ -1,3 +1,18 @@
-<% @jobs.each do |jobs| %>
-  <%= jobs.title %>
-<% end %>
+<div class="row">
+  <div class="span12">
+    <% @jobs.each do |job| %>
+      <div class="row tile">
+        <header>
+          <h3>
+            <%= job.title %><small>(3 vagas)</small>
+          </h3>
+        </header>
+        <article>
+          <span>
+            <%= job.description %>
+          </span>
+        </article>
+      </div>
+    <% end %>
+  </div>
+</div>
