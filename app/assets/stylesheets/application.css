@@ -18,10 +18,10 @@
   display:table;
 }
 .demo-logo .logo{
-  background-size: 90px 63px!important;
-  height: 63px!important;
+  background-size: 90px 90px!important;
+  height: 90px!important;
   float: left!important;
-  margin: 0!important;
+  margin-top: -23px!important;
   width: 90px!important;
 }
 .demo-logo {
