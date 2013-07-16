@@ -22,7 +22,7 @@ Canteiro::Application.routes.draw do
   get "/jobs/:job_id/resumes/:resume_id/applies/:id" => "applies#show"
 
   match 'jobs/:job_id/applies/' => "applies#index"
-
+  match 'companies/:company_id/jobs' => "companies#my_jobs"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

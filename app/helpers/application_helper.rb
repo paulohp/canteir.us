@@ -42,11 +42,11 @@ module ApplicationHelper
       if current_user.resume
         applicados = current_user.resume.applies
         if applicados == []
-          return link_to 'Aplicar', "/jobs/#{ejob_id}/applies/new", :class => 'btn btn-block btn-success'
+          return link_to 'Aplicar1', "/jobs/#{ejob_id}/applies/new", :class => 'btn btn-block btn-success'
         else
           applicados.each do |aplicado|
             unless aplicado.job_id == ejob_id
-              return link_to 'Aplicar', "/jobs/#{ejob_id}/applies/new", :class => 'btn btn-block btn-success'
+              return link_to 'Aplicar2', "/jobs/#{ejob_id}/applies/new", :class => 'btn btn-block btn-success'
             else
               return link_to 'Já Enviada', "#", :class => 'btn btn-block btn-danger'
             end
@@ -56,7 +56,7 @@ module ApplicationHelper
         return link_to 'Completar Curriculo', "#", :class => 'btn btn-block btn-danger'
       end
     else
-      return link_to 'Aplicar', "/jobs/#{ejob_id}/applies/new", :class => 'btn btn-block btn-success'
+      return link_to 'Aplicar3', "/jobs/#{ejob_id}/applies/new", :class => 'btn btn-block btn-success'
     end
   end
 
