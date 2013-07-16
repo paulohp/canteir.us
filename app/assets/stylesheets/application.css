@@ -60,6 +60,14 @@
 .my_jobs aside{
   text-align: right;
 }
+.my_jobs p b{
+  display: block;
+  float: left;
+  width: 200px;
+}
+.my_jobs p{
+  display: table;
+}
 .right{
   float: right!important;
 }

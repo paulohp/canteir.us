@@ -1,25 +1,29 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="span12">
+    <p id="notice"><%= notice %></p>
+    <div class="row tile my_jobs">
+      <header class="span6">
+        <h3>
+          <%= @job.title %>
+        </h3>
+      </header>
+      <article class="span8">
+        <p>
+          <b>Category:</b>
+          <%= @job.category %>
+        </p>
 
-<p>
-  <b>Title:</b>
-  <%= @job.title %>
-</p>
+        <p>
+          <b>Description:</b>
+          <%= @job.description %>
+        </p>
 
-<p>
-  <b>Category:</b>
-  <%= @job.category %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @job.description %>
-</p>
-
-<p>
-  <b>Location:</b>
-  <%= @job.location %>
-</p>
-
-
-<%= link_to 'Edit', edit_job_path(@job) %> |
-<%= link_to 'Back', jobs_path %>
+        <p>
+          <b>Location:</b>
+          <%= @job.location %>
+        </p>
+      </article>
+    </div>
+    <%= link_to 'Back', jobs_path %>
+  </div>
+</div>
