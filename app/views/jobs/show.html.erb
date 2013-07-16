@@ -9,20 +9,39 @@
       </header>
       <article class="span8">
         <p>
-          <b>Category:</b>
+          <b>Categoria:</b>
           <%= @job.category %>
         </p>
 
         <p>
-          <b>Description:</b>
+          <b>Cargo:</b>
+          <%= @job.role %>
+        </p>
+
+        <p>
+          <b>Descrição:</b>
           <%= @job.description %>
         </p>
 
         <p>
-          <b>Location:</b>
+          <b>Salário:</b>
+          <%= @job.salary %>
+        </p>
+
+        <p>
+          <b>Empresa:</b>
+          <%= @job.company.name %>
+        </p>
+
+        <p>
+          <b>Cidade:</b>
           <%= @job.location %>
         </p>
       </article>
+      <aside class="span3">
+        <%= ejob_applied?(@job.id) %> <br>
+        <%= link_to "Ver vagas relacionadas", "#", :class => "btn btn-block" %>
+      </aside>
     </div>
     <%= link_to 'Back', jobs_path %>
   </div>
