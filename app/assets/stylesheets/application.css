@@ -65,7 +65,8 @@
   float: left;
   width: 200px;
 }
-.my_jobs p{
+.my_jobs p,
+.my_jobs span{
   display: table;
 }
 .right{

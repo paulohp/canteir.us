@@ -10,32 +10,32 @@
       <article class="span8">
         <p>
           <b>Categoria:</b>
-          <%= @job.category %>
+          <span class="right"><%= @job.category %></span>
         </p>
 
         <p>
           <b>Cargo:</b>
-          <%= @job.role %>
+          <span class="right"><%= @job.role %></span>
         </p>
 
         <p>
           <b>Descrição:</b>
-          <%= @job.description %>
+          <span><%= @job.description.html_safe %></span>
         </p>
 
         <p>
           <b>Salário:</b>
-          <%= @job.salary %>
+          <span class="right"><%= @job.salary %></span>
         </p>
 
         <p>
           <b>Empresa:</b>
-          <%= @job.company.name %>
+          <span class="right"><%= @job.company.name %></span>
         </p>
 
         <p>
           <b>Cidade:</b>
-          <%= @job.location %>
+          <span class="right"><%= @job.location %></span>
         </p>
       </article>
       <aside class="span3">
