@@ -6,19 +6,30 @@
     </p>
   <% end %>
 </div>
-<div class="row demo-tiles">
-  <% @jobs.each do |job| %>
-  <div class="span3">
-    <div class="tile">
-      <%= job.title %>
-      <%= job.category %>
-      <%= job.description %>
-      <%= job.location %>
-      <%= link_to 'Show', job %>
-      <%= link_to 'Edit', edit_job_path(job) %>
-      <%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %>
-      <%= ejob_applied?(job.id) %>
-    </div>
+<div class="row">
+  <div class="span12">
+    <% @jobs.each do |job| %>
+      <div class="row tile my_jobs">
+        <header class="span6">
+          <h3>
+            <%= job.title %><small>(3 vagas)</small>
+          </h3>
+        </header>
+        <aside class="right span4">
+          <span><strong>Data:</strong> 03/07/2013</span><br />
+          <span><strong><%= job.location.upcase %></strong> </span><br />
+          <span><strong>Salário:</strong> A combinar</span>
+        </aside>
+        <article class="span7">
+          <span>
+            <%= job.description %>
+          </span>
+        </article>
+        <br>
+        <footer class="span8">
+          <small><strong>Aplicações:</strong><%= job.applies.size %></small>
+        </footer>
+      </div>
+    <% end %>
   </div>
-  <% end %>
 </div>
