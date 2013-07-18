@@ -14,6 +14,7 @@
           <h3>
             <%= job.title %><small>(3 vagas)</small>
           </h3>
+          <span><strong>Cargo: </strong><%= job.role %></span>
         </header>
         <aside class="right span3">
           <span><strong>Data:</strong> 03/07/2013</span>
@@ -25,7 +26,8 @@
         </aside>
         <article class="span8">
           <span>
-            <%= job.description %>
+            <%= truncate job.description, length: 160 %>
+            <%= link_to 'ver mais', job %> 
           </span>
         </article>
         <br>
