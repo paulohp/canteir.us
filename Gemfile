@@ -8,6 +8,8 @@ gem 'rails', '3.2.13'
 gem 'pg'
 
 gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
 gem 'savon', '~> 2.0'
 gem 'activeadmin'
 gem 'meta_search', '>= 1.1.0.pre'
