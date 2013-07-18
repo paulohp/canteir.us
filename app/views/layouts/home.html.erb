@@ -11,6 +11,7 @@
       border-top: 6px solid #C0392B;
     }
     .banner {
+      height: 420px!important;
       position: relative;
       width: 100%;
       overflow: auto;
@@ -108,6 +109,24 @@
         speed: 500
       });
     });
+  </script>
+  <!-- UserVoice JavaScript SDK (only needed once on a page) -->
+  <script>(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/pJ3fdS2Jb0xCBNLlu4QfYQ.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})()</script>
+
+  <!-- A tab to launch the Classic Widget -->
+  <script>
+  UserVoice = window.UserVoice || [];
+  UserVoice.push(['showTab', 'classic_widget', {
+    mode: 'full',
+    primary_color: '#c03a2b',
+    link_color: '#007dbf',
+    default_mode: 'support',
+    forum_id: 215249,
+    tab_label: 'Feedback',
+    tab_color: '#c03a2b',
+    tab_position: 'middle-right',
+    tab_inverted: false
+  }]);
   </script>
 </body>
 </html>
