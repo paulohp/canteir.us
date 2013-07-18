@@ -57,8 +57,13 @@
 .my_jobs article{
   text-align: left;
 }
-.my_jobs aside{
+.my_jobs aside span,
+.my_jobs aside div{
+  display: block;
   text-align: right;
+}
+.my_jobs aside div{
+  margin-top: 8px;
 }
 .my_jobs p b{
   display: block;

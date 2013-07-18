@@ -10,17 +10,20 @@
   <div class="span12">
     <% @jobs.each do |job| %>
       <div class="row tile my_jobs">
-        <header class="span6">
+        <header class="span8">
           <h3>
             <%= job.title %><small>(3 vagas)</small>
           </h3>
         </header>
-        <aside class="right span4">
-          <span><strong>Data:</strong> 03/07/2013</span><br />
-          <span><strong><%= job.location.upcase %></strong> </span><br />
+        <aside class="right span3">
+          <span><strong>Data:</strong> 03/07/2013</span>
+          <span><strong><%= job.location.upcase %></strong></span>
           <span><strong>Salário:</strong> A combinar</span>
+          <div>
+            <%= image_tag(job.company.picture_url, :width => 200) if job.company.picture.present? %>
+          </div>
         </aside>
-        <article class="span7">
+        <article class="span8">
           <span>
             <%= job.description %>
           </span>
