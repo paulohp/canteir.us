@@ -1,5 +1,7 @@
 Canteiro::Application.routes.draw do
 
+  get "home" => "home#index"
+
   devise_for :companies
   devise_for :users
 

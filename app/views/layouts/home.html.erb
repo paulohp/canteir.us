@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canteiro</title>
+  <style>
+    body{
+      margin:  0!important;
+      padding: 0!important;
+    }
+    .wrapper{
+      border-top: 6px solid #C0392B;
+    }
+  </style>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="wrapper">
+    <%= yield %>
+  </div>
+</body>
+</html>
