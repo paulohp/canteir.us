@@ -14,12 +14,12 @@
           <h3>
             <%= job.title %><small>(3 vagas)</small>
           </h3>
-          <span><strong>Cargo: </strong><%= job.role %></span>
+          <span style="display:inline;margin-right:8px"><strong>Cargo: </strong><%= job.role %></span>
+          <span style="display:inline"><strong>Salário:</strong> A combinar</span>
         </header>
         <aside class="right span3">
-          <span><strong>Data:</strong> 03/07/2013</span>
+          <span><strong>Data:</strong><%= job.created_at %></span>
           <span class="fui-location"><strong><%= job.location.upcase %></strong></span>
-          <span><strong>Salário:</strong> A combinar</span>
           <div>
             <%= image_tag(job.company.picture_url, :width => 200) if job.company.picture.present? %>
           </div>
