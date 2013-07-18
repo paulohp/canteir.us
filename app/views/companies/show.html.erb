@@ -6,9 +6,11 @@
           <%= image_tag(@company.picture_url, :width => 84) if @company.picture.present? %>
         </div>
         <div class="demo-browser-action">
-          <a class="btn btn-danger btn-large btn-block" href="<%= new_job_path %>" target="_blank">
-            Nova Vaga
-          </a>
+          <% if company_signed_in? %>
+            <a class="btn btn-danger btn-large btn-block" href="<%= new_job_path %>" target="_blank">
+              Nova Vaga
+            </a>
+          <% end %>
         </div>
         <h5><%= @company.name %></h5>
         <h6>
@@ -26,7 +28,9 @@
                   <%= job.title %>
                 </div>
               <% end %>
-              <%= link_to "Ver Candidatos", "/jobs/#{job.id}/applies/", :class => "btn btn-primary btn-large" %>
+              <% if company_signed_in? %>
+                <%= link_to "Ver Candidatos", "/jobs/#{job.id}/applies/", :class => "btn btn-primary btn-large" %>
+              <% end %>
             </div>
           <% end %>
         </section>
