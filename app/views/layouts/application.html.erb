@@ -10,7 +10,7 @@
 <% flash.each do |key, value| %>
     <% vd('APP HTML', key, value, flash.count) %>
     <% unless flash[key].blank? %>
-      <div class="flash <%= key %>">
+      <div class="alert <%= key %>">
         <%= value %>
       </div>
     <% end %>
