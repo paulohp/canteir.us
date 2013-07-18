@@ -32,7 +32,13 @@
         </article>
         <br>
         <footer class="span8">
-          <small><strong>Aplicações:</strong><%= job.applies.size %></small>
+          <br>
+          <div class="span3">
+            <%= ejob_applied?(job.id) %>
+          </div>
+          <div class="span3">
+            <%= link_to "Ver vagas relacionadas", "#", :class => "btn btn-block" %>
+          </div>
         </footer>
       </div>
     <% end %>
