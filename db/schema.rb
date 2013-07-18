@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130716023918) do
+ActiveRecord::Schema.define(:version => 20130718221129) do
 
   create_table "applies", :force => true do |t|
     t.integer  "resume_id"
@@ -98,6 +98,8 @@ ActiveRecord::Schema.define(:version => 20130716023918) do
     t.string   "name"
     t.string   "location"
     t.text     "bio"
+    t.string   "provider"
+    t.string   "uid"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
