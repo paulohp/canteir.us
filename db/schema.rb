@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130718221129) do
+ActiveRecord::Schema.define(:version => 20130722185611) do
 
   create_table "applies", :force => true do |t|
     t.integer  "resume_id"
@@ -57,6 +57,7 @@ ActiveRecord::Schema.define(:version => 20130718221129) do
     t.string   "role"
     t.string   "salary"
     t.string   "number_of_vacancies"
+    t.string   "job_type"
   end
 
   add_index "jobs", ["company_id"], :name => "index_jobs_on_company_id"
