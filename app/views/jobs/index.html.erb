@@ -18,7 +18,7 @@
           <span style="display:inline"><strong>Salário:</strong> A combinar</span>
         </header>
         <aside class="right span3">
-          <span><strong>Data:</strong><%= job.created_at %></span>
+          <span><strong>Data: </strong><%= job.created_at.to_s(:post) %></span>
           <span class="fui-location"><strong><%= job.location.upcase %></strong></span>
           <div>
             <%= image_tag(job.company.picture_url, :width => 200) if job.company.picture.present? %>
