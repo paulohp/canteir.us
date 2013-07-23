@@ -114,6 +114,7 @@ GEM
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
     nori (2.1.0)
+    oauth (0.4.7)
     oauth2 (0.8.1)
       faraday (~> 0.8)
       httpauth (~> 0.1)
@@ -125,6 +126,11 @@ GEM
       rack
     omniauth-facebook (1.4.1)
       omniauth-oauth2 (~> 1.1.0)
+    omniauth-linkedin (0.1.0)
+      omniauth-oauth (~> 1.0)
+    omniauth-oauth (1.0.1)
+      oauth
+      omniauth (~> 1.0)
     omniauth-oauth2 (1.1.1)
       oauth2 (~> 0.8.0)
       omniauth (~> 1.0)
@@ -210,6 +216,7 @@ DEPENDENCIES
   mini_magick
   omniauth
   omniauth-facebook
+  omniauth-linkedin
   pg
   rails (= 3.2.13)
   sass-rails (~> 3.2.3)
