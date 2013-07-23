@@ -1,6 +1,10 @@
 Canteiro::Application.routes.draw do
 
   get "home" => "home#index"
+  
+  devise_for :companies
+  devise_for :users
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
   resources :companies
   resources :resumes
@@ -23,8 +27,6 @@ Canteiro::Application.routes.draw do
   match 'jobs/:job_id/applies/' => "applies#index"
   match 'companies/:company_id/jobs' => "companies#my_jobs"
 
-  devise_for :companies
-  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
