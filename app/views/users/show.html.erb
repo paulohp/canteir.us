@@ -19,6 +19,7 @@
       <div class="demo-browser-content">
         <h4>Vagas Cadastradas</h4>
         <section class="span8">
+          <% if !@vagas_aplicadas.nil? %>
           <% @vagas_aplicadas.each do |vaga_aplicada| %>
             <% trampo_aplicado = Job.find(vaga_aplicada.job_id) %>
             <div style="min-height:80px;" class="span2 palette palette-midnight-blue">
@@ -35,6 +36,9 @@
                 <%= trampo_aplicado.company.name %>
               </div>
             </div>
+          <% end %>
+          <% else %>
+            <h2>Nenhuma vaga aplicada!</h2>
           <% end %>
         </section>
       </div>
