@@ -23,7 +23,7 @@
     </ul>
 </div>
 <div class="container">
-  <a style="display: table;margin: 0 auto;" href="/jobs" class="btn btn-info btn-large">Entre com o Facebook</a>
+  <%= link_to "Entre com o Facebook", user_omniauth_authorize_path(:facebook), :class=>"btn btn-info btn-large", :style=>"display: table;margin: 0 auto;" %>
   <span style="display: table;margin: 0 auto;">ou</span>
   <a style="display: table;margin: 0 auto;" href="/jobs">Entre com seu email</a>
 </div>
