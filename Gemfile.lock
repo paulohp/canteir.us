@@ -126,6 +126,9 @@ GEM
       rack
     omniauth-facebook (1.4.1)
       omniauth-oauth2 (~> 1.1.0)
+    omniauth-google-oauth2 (0.2.0)
+      omniauth (~> 1.0)
+      omniauth-oauth2
     omniauth-linkedin (0.1.0)
       omniauth-oauth (~> 1.0)
     omniauth-oauth (1.0.1)
@@ -216,6 +219,7 @@ DEPENDENCIES
   mini_magick
   omniauth
   omniauth-facebook
+  omniauth-google-oauth2
   omniauth-linkedin
   pg
   rails (= 3.2.13)
