@@ -1,17 +1,14 @@
 Canteiro::Application.routes.draw do
 
   resources :categories
-
-
+  
   devise_for :admin_users, ActiveAdmin::Devise.config
-  ActiveAdmin.routes(self)
 
   get "home" => "home#index"
 
   devise_for :companies
-  ActiveAdmin.routes(self)
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
-  ActiveAdmin.routes(self)
+  
 
   resources :companies
   resources :resumes
@@ -90,4 +87,5 @@ Canteiro::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
+  ActiveAdmin.routes(self)
 end

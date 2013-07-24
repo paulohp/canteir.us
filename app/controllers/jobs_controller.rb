@@ -12,6 +12,7 @@ class JobsController < InheritedResources::Base
 
   def new
     @job = current_company.jobs.build
+    @categories = Category.all
   end
 
   # POST /tasks
