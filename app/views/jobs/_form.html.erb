@@ -1,48 +1,51 @@
-<%= form_for(@job) do |f| %>
-  <% if @job.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@job.errors.count, "error") %> prohibited this job from being saved:</h2>
+<section class="span12">
+  <%= form_for(@job) do |f| %>
+    <% if @job.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@job.errors.count, "error") %> prohibited this job from being saved:</h2>
 
-      <ul>
-      <% @job.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+        <ul>
+        <% @job.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <div class="field span3">
+      <%= f.label :job_type, "Tipo de emprego:" %>
+      <%= f.select :job_type, (["Estágio", "Emprego", "Trainee"]) %>
+    </div>
+    <div class="field span3">
+      <%= f.label :number_of_vacancies, "Numero de vagas:" %>
+      <%= f.select(:number_of_vacancies, %w[1 2 3 4 5 6 7 8 9 10], {}, { index: nil }) %>
+    </div>
+    <div class="field span3">
+      <%= f.label :category, "Categoria:" %>
+      <%= f.select :category, [["Selecione uma categoria", 0]]+ @categories.collect { |c| [c.name, c.id]}  %>
+    </div>
+    <div class="span10 field">
+      <%= f.label :title, "Título:" %>
+      <%= f.text_field :title, :placeholder => "Exemplo: Tecnico em edificações, Encarregado de obra especializado em concretagem" %>
+    </div>
+
+    <div class="span10 field">
+      <%= f.label :role, "Cargo:" %>
+      <%= f.text_field :role, :placeholder => "Exemplo: Técnico em Edificações Junior, Engenheiro Civil Senior" %>
+    </div>
+    <div class="span10 field">
+      <%= f.label :salary, "Salário:" %>
+      <%= f.text_field :salary %>
+    </div>
+    <div class="span10 field">
+      <%= f.label :location, "Localização:" %>
+      <%= f.text_field :location %>
+    </div>
+    <div class="span10 field">
+      <%= f.label :description, "Descrição:" %>
+      <%= f.text_area :description, :style => "width:93%" %>
+    </div>
+    <div class="span3 actions">
+      <%= f.submit "Salvar", :class=>"btn btn-large btn-danger" %>
     </div>
   <% end %>
-  <div class="field">
-    <%= f.label :job_type, "Tipo de emprego:" %>
-    <%= f.select :job_type, (["Estágio", "Emprego", "Trainee"]) %>
-  </div>
-  <div class="field">
-    <%= f.label :title, "Título:" %>
-    <%= f.text_field :title, :placeholder => "Exemplo: Tecnico em edificações, Encarregado de obra" %>
-  </div>
-  <div class="field">
-    <%= f.label :number_of_vacancies, "Numero de vagas:" %>
-    <%= f.select(:number_of_vacancies, %w[1 2 3 4 5 6 7 8 9 10], {}, { index: nil }) %>
-  </div>
-  <div class="field">
-    <%= f.label :category, "Categoria:" %>
-    <%= f.select :category, [["Selecione uma categoria", 0]]+ @categories.collect { |c| [c.name, c.id]}  %>
-  </div>
-  <div class="field">
-    <%= f.label :role, "Cargo:" %>
-    <%= f.text_field :role %>
-  </div>
-  <div class="field">
-    <%= f.label :salary, "Salário:" %><br />
-    <%= f.text_field :salary %>
-  </div>
-  <div class="field">
-    <%= f.label :location, "Localização:" %><br />
-    <%= f.text_field :location %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_area :description %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+</section>
