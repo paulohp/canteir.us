@@ -1,9 +1,14 @@
 Canteiro::Application.routes.draw do
 
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+
   get "home" => "home#index"
 
   devise_for :companies
+  ActiveAdmin.routes(self)
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+  ActiveAdmin.routes(self)
 
   resources :companies
   resources :resumes
