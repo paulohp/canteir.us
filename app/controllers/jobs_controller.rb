@@ -4,10 +4,15 @@ class JobsController < InheritedResources::Base
 
   def index
     if params[:search]
-      @jobs = Job.search(params[:search]).order("created_at DESC")
+      @jobs = Job.busca(params[:search]).order("created_at DESC")
     else
       @jobs = Job.order("created_at DESC")
     end
+
+    @search = Job.search(params[:q])
+    @jobs = @search.result
+
+    @user = User.find(current_user.id) if current_user
   end
 
   def new
