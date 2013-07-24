@@ -11,15 +11,15 @@
     </div>
   <% end %>
   <div class="field">
-    <%= f.label :job_type %>
+    <%= f.label :job_type, "Tipo de emprego:" %>
     <%= f.select :job_type, (["Estágio", "Emprego", "Trainee"]) %>
   </div>
   <div class="field">
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
+    <%= f.label :title, "Título:" %>
+    <%= f.text_field :title, :placeholder => "Exemplo: Tecnico em edificações, Encarregado de obra" %>
   </div>
   <div class="field">
-    <%= f.label :number_of_vacancies %><br />
+    <%= f.label :number_of_vacancies, "Numero de vagas:" %>
     <%= f.text_field :number_of_vacancies %>
   </div>
   <div class="field">
