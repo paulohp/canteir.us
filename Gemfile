@@ -16,6 +16,7 @@ gem 'savon', '~> 2.0'
 gem 'activeadmin'
 gem 'meta_search', '>= 1.1.0.pre'
 gem "ransack"
+gem 'newrelic_rpm'
 # Gems used only for assets and not required
 # in production environments by default.
 group :development do

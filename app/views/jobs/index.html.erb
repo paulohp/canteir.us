@@ -7,25 +7,27 @@
   <% end %>
 </div>
 <div class="row">
-  <% if user_signed_in? %>
-    <div class="span3">
-      <%= image_tag avatar_url(@user, 80) %>
-      <%= @user.name %>
-    </div>
-  <% end %>
-  <div class="span3">
-    <%= search_form_for @search do |f| %>
-      <div class="field">
-        <%= f.label :title_cont, "Name contains" %>
-        <%= f.text_field :title_cont %>
+  <div class="aside">
+    <% if user_signed_in? %>
+      <div class="span3">
+        <%= image_tag avatar_url(@user, 80) %>
+        <%= @user.name %>
       </div>
-      <div class="actions"><%= f.submit "Search" %></div>
     <% end %>
+    <div class="span3">
+      <%= search_form_for @search do |f| %>
+        <div class="field">
+          <%= f.label :title_cont, "Name contains" %>
+          <%= f.text_field :title_cont %>
+        </div>
+        <div class="actions"><%= f.submit "Search" %></div>
+      <% end %>
+    </div>
   </div>
-  <div class="span9">
+  <div class="span8">
     <% @jobs.each do |job| %>
       <div class="row tile my_jobs">
-        <header class="span5">
+        <header class="span4">
           <h3>
             <%= job.title %><small>(<%= job.number_of_vacancies %> vagas)</small>
           </h3>
@@ -39,14 +41,14 @@
             <%= image_tag(job.company.picture_url, :width => 200) if job.company.picture.present? %>
           </div>
         </aside>
-        <article class="span5">
+        <article class="span4">
           <span>
             <%= truncate job.description, length: 160 %>
             <%= link_to 'ver mais', job %> 
           </span>
         </article>
         <br>
-        <footer class="span5">
+        <footer class="span4">
           <br>
           <div class="span3">
             <%= ejob_applied?(job.id) %>
