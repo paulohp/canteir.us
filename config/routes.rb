@@ -1,5 +1,7 @@
 Canteiro::Application.routes.draw do
 
+  get "static/entrar"
+
   resources :categories
   
   devise_for :admin_users, ActiveAdmin::Devise.config
@@ -23,6 +25,7 @@ Canteiro::Application.routes.draw do
     end
   end
 
+  match 'entrar' => 'static#entrar'
   match 'jobs/:job_id/applies/new' => "applies#new"
   match 'users/:user_id/resumes/:id' => "resumes#show"
 
