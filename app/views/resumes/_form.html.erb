@@ -1,3 +1,6 @@
+<br>
+<br>
+<br>
 <%= form_for(@resume) do |f| %>
   <% if @resume.errors.any? %>
     <div id="error_explanation">
@@ -10,40 +13,46 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br />
+  <header>
+    <h3>Dados Pessoais</h3>
+  </header>
+  <div class="field span10">
+    <%= f.label :name, "Nome Completo:" %>
     <%= f.text_field :name %>
   </div>
-  <div class="field">
-    <%= f.label :dob %><br />
+  <div class="field span10">
+    <%= f.label :dob, "Data de Nascimento:" %>
     <%= f.text_field :dob %>
   </div>
-  <div class="field">
-    <%= f.label :gender %><br />
-    <%= f.text_field :gender %>
+  <div class="field span3">
+    <%= f.label :gender, "Sexo: " %>
+    <%= f.select :gender, ["Masculino", "Feminino"] %>
   </div>
-  <div class="field">
-    <%= f.label :civil %><br />
-    <%= f.text_field :civil %>
+  <div class="field span3">
+    <%= f.label :civil, "Estado Civil:" %>
+    <%= f.select :civil, ["Solteiro(a)", "Casado(a)", "Separado(a)", "Divorciado(a)", "Viúvo(a)", "Outro"] %>
   </div>
-  <div class="field">
-    <%= f.label :children %><br />
-    <%= f.text_field :children %>
+  <div class="field span3">
+    <%= f.label :children, "Possiu Filhos:" %>
+    <%= f.select :children, ["Sim", "Não"] %>
   </div>
-  <div class="field">
-    <%= f.label :professional_objctive %><br />
+  <br>
+  <header class="span12">
+    <h3>Apresentação Profissional</h3>
+  </header>
+  <div class="field span10">
+    <%= f.label :professional_objctive %>
     <%= f.text_field :professional_objctive %>
   </div>
-  <div class="field">
-    <%= f.label :job_area %><br />
+  <div class="field span10">
+    <%= f.label :job_area %>
     <%= f.text_field :job_area %>
   </div>
-  <div class="field">
-    <%= f.label :mini_resume %><br />
+  <div class="field span10">
+    <%= f.label :mini_resume %>
     <%= f.text_field :mini_resume %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="actions span10">
+    <%= f.submit "Salvar", :class => "btn btn-large btn-primary" %>
   </div>
 <% end %>
