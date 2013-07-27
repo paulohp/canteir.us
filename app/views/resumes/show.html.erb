@@ -1,45 +1,71 @@
-<p id="notice"><%= notice %></p>
+<div class="span12">
+  <%= link_to "Imprimir", "/", :class=>"btn btn-primary" %>
+  <%= link_to "Enviar por e-mail", "", :class=>"btn btn-primary" %>
+</div>
+<br>
+<br>
+<br>
+<div class="span3">
+  <span><strong>Endereço:</strong>
+    <%= @resume.address %>&nbsp;<%= @resume.complement %> <br>
+    <%= @resume.district %> <br>
+    <%= @resume.postal_code %> <br>
+    <%= @resume.city %>/<%= @resume.state %>
+  </span>
+</div>
+<div class="span3">
+  <span><strong>Email:</strong>
+    <%= @resume.user.email %> <br>
+    <strong>Tel.:</strong>
+    <%= @resume.tel_residence %> <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= @resume.tel_commercial %> <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= @resume.tel_celular %>
+  </span>
+</div>
+<div class="span12 row">
+  <h1>
+    <%= @resume.name %>
+  </h1>
+</div>
+<div class="span12 row">
+  <span style="margin-right:25px;">
+    <strong>Data de Nascimento: </strong>
+    <%= @resume.dob %>
+  </span>
 
-<p>
-  <b>Name:</b>
-  <%= @resume.name %>
-</p>
+  <span style="margin-right:25px;">
+    <strong>Sexo: </strong>
+    <%= @resume.gender %>
+  </span>
 
-<p>
-  <b>Dob:</b>
-  <%= @resume.dob %>
-</p>
+  <span style="margin-right:25px;">
+    <strong>Estado Civil: </strong>
+    <%= @resume.civil %>
+  </span>
 
-<p>
-  <b>Gender:</b>
-  <%= @resume.gender %>
-</p>
+  <span>
+    <strong>Possui Filhos: </strong>
+    <%= @resume.children %>
+  </span>
+  <hr />
+</div>
+<div class="span12 row">
+  <p>
+    <b>Professional objctive:</b>
+    <%= @resume.professional_objctive %>
+  </p>
 
-<p>
-  <b>Civil:</b>
-  <%= @resume.civil %>
-</p>
+  <p>
+    <b>Job area:</b>
+    <%= @resume.job_area %>
+  </p>
 
-<p>
-  <b>Children:</b>
-  <%= @resume.children %>
-</p>
-
-<p>
-  <b>Professional objctive:</b>
-  <%= @resume.professional_objctive %>
-</p>
-
-<p>
-  <b>Job area:</b>
-  <%= @resume.job_area %>
-</p>
-
-<p>
-  <b>Mini resume:</b>
-  <%= @resume.mini_resume %>
-</p>
-
-
-<%= link_to 'Edit', edit_resume_path(@resume) %> |
-<%= link_to 'Back', resumes_path %>
+  <p>
+    <b>Mini resume:</b>
+    <%= @resume.mini_resume %>
+  </p>
+</div>
+<div class="span12">
+  <%= link_to 'Edit', edit_resume_path(@resume) %> |
+  <%= link_to 'Back', resumes_path %>
+</div>
