@@ -25,6 +25,8 @@ Canteiro::Application.routes.draw do
     end
   end
 
+  match 'empresas' => 'companies#index'
+
   match 'entrar' => 'static#entrar'
   match 'jobs/:job_id/applies/new' => "applies#new"
   match 'users/:user_id/resumes/:id' => "resumes#show"

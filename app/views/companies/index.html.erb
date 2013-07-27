@@ -1,12 +1,19 @@
 <div class="row demo-tiles">
+  <header class="span12">
+    <h3>Explore as mais de <%= @companies.size %> empresas cadastradas!</h3>
+  </header>
   <% @companies.each do |company| %>
     <div class="span3">
       <div class="tile">
-        <%= company.name %>
-        <%= company.location %>
-        <%= link_to 'Show', company %>
-        <%= link_to 'Edit', edit_company_path(company) %>
-        <%= link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <header>
+          <%= image_tag(company.picture_url, :width => 200) if company.picture.present? %>
+        </header>
+        <article>
+          <%= company.name %>
+        </article>
+        <footer>
+          <strong><%= company.jobs.size %> vagas</strong>
+        </footer>
       </div>
     </div>
   <% end %>
