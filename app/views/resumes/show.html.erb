@@ -51,21 +51,22 @@
 </div>
 <div class="span12 row">
   <p>
-    <b>Professional objctive:</b>
+    <b>Objetivo Professional:</b>
     <%= @resume.professional_objctive %>
   </p>
 
   <p>
-    <b>Job area:</b>
+    <b>Áreas/Cargos Pretendidos:</b>
     <%= @resume.job_area %>
   </p>
-
+  <hr />
   <p>
-    <b>Mini resume:</b>
+    <b>Mini Currículo:</b>
     <%= @resume.mini_resume %>
   </p>
+  <hr />
 </div>
 <div class="span12">
-  <%= link_to 'Edit', edit_resume_path(@resume) %> |
-  <%= link_to 'Back', resumes_path %>
+  <%= link_to 'Edit', edit_resume_path(@resume), :class=>"btn" %>
+  <%= link_to 'Back', resumes_path, :class=>"btn" %>
 </div>
