@@ -134,6 +134,7 @@
   $('.remove_fields').on('click', function(event) {
     $(this).prev('input[type=hidden]').val('1');
     $(this).closest('fieldset').hide();
+    alert($(this).attr('id'))
     return event.preventDefault();
   });
   $('.add_fields').on('click', function(event) {

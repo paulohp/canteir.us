@@ -19,6 +19,8 @@ class ResumesController < InheritedResources::Base
   # GET /tasks/1/edit
   def edit
     @resume = Resume.find(params[:id])
+    @formacao_academica = @resume.academics
+    @experiencia_profissional = @resume.experiences
   end
 
   # POST /tasks
