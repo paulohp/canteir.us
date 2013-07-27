@@ -3,6 +3,7 @@ class ResumesController < InheritedResources::Base
   def show
     @resume = Resume.find(params[:id])
     @formacao_academica = @resume.academics
+    @experiencia_profissional = @resume.experiences
   end
 
   def new

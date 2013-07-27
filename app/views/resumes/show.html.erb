@@ -82,6 +82,21 @@
   </div>
 </div>
 <div class="span12">
+  <div style="margin-left:0px;" class="span4">
+    <h4>Experiencia Profissional</h4>
+  </div>
+  <div class="span8">
+    <% @experiencia_profissional.each do |experiencia| %>
+      <span><strong>Nome da Empresa:&nbsp;</strong><%= experiencia.company %></span><br>
+      &nbsp;&nbsp;&nbsp;<span><strong>Cargo:&nbsp;</strong><%= experiencia.role %></span><br>
+      &nbsp;&nbsp;&nbsp;<span><strong>Funções:&nbsp;</strong><%= experiencia.functions %></span><br>
+      &nbsp;&nbsp;&nbsp;<span><strong>Data de Inicio:&nbsp;</strong><%= experiencia.initial %></span><br>
+      &nbsp;&nbsp;&nbsp;<span><strong>Data de Saida:&nbsp;</strong><%= experiencia.final %></span><br>
+      <br><br>
+    <% end %>
+  </div>
+</div>
+<div class="span12">
   <%= link_to 'Edit', edit_resume_path(@resume), :class=>"btn" %>
   <%= link_to 'Back', resumes_path, :class=>"btn" %>
 </div>
