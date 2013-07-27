@@ -117,6 +117,14 @@
       <% end %>
     </div>
   </div>
+  <div class="span10">
+    <div class="experiences">
+      <%= link_to_add_fields "Adicionar Experiência Profissional", f, :experiences %>
+       <%= f.fields_for :experiences do |builder| %>
+        <%= render 'experience_fields', f: builder %>
+      <% end %>
+    </div>
+  </div>
   <div class="actions span10">
     <%= f.submit "Salvar", :class => "btn btn-large btn-primary" %>
   </div>
