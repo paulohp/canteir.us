@@ -1,5 +1,10 @@
 class ResumesController < InheritedResources::Base
 
+  def show
+    @resume = Resume.find(params[:id])
+    @formacao_academica = @resume.academics
+  end
+
   def new
     @user = current_user
     @resume = @user.build_resume
@@ -35,7 +40,7 @@ class ResumesController < InheritedResources::Base
   # PUT /tasks/1
   # PUT /tasks/1.json
   def update
-    @resume = current_user.resume.find(params[:id])
+    @resume = Resume.find(params[:id])
 
     respond_to do |format|
       if @resume.update_attributes(params[:resume])

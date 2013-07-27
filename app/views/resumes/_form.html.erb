@@ -112,9 +112,28 @@
   <div class="span10">
     <div class="academics">
       <%= link_to_add_fields "Adicionar Formação Academica", f, :academics %>
+       <%= f.fields_for :academics do |builder| %>
+        <%= render 'academic_fields', f: builder %>
+      <% end %>
     </div>
   </div>
   <div class="actions span10">
     <%= f.submit "Salvar", :class => "btn btn-large btn-primary" %>
   </div>
 <% end %>
+<script>
+  $().ready(function() {
+  $('.remove_fields').on('click', function(event) {
+    $(this).prev('input[type=hidden]').val('1');
+    $(this).closest('fieldset').hide();
+    return event.preventDefault();
+  });
+  $('.add_fields').on('click', function(event) {
+    var regexp, time;
+    time = new Date().getTime();
+    regexp = new RegExp($(this).data('id'), 'g');
+    $(this).before($(this).data('fields').replace(regexp, time));
+    return event.preventDefault();
+  });
+});
+</script>
