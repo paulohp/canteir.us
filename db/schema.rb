@@ -11,7 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130726223108) do
+ActiveRecord::Schema.define(:version => 20130727034201) do
+
+  create_table "academics", :force => true do |t|
+    t.string   "name"
+    t.string   "degree"
+    t.string   "institution"
+    t.string   "initial"
+    t.string   "final"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -84,6 +94,16 @@ ActiveRecord::Schema.define(:version => 20130726223108) do
 
   add_index "companies", ["email"], :name => "index_companies_on_email", :unique => true
   add_index "companies", ["reset_password_token"], :name => "index_companies_on_reset_password_token", :unique => true
+
+  create_table "experiences", :force => true do |t|
+    t.string   "company"
+    t.string   "role"
+    t.string   "initial"
+    t.string   "final"
+    t.text     "functions"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "jobs", :force => true do |t|
     t.string   "title"

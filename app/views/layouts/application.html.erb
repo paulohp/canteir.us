@@ -3,8 +3,8 @@
 <head>
   <title>Canteiro</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
-
   <%= csrf_meta_tags %>
+  <script src="/assets/jquery-1.8.3.min.js"></script>
 </head>
 <body>
 <% flash.each do |key, value| %>
@@ -43,7 +43,6 @@
 
 <%= render 'layouts/footer' %>
 <!-- Load JS here for greater good =============================-->
-    <script src="/assets/jquery-1.8.3.min.js"></script>
     <script src="/assets/jquery-ui-1.10.3.custom.min.js"></script>
     <script src="/assets/jquery.ui.touch-punch.min.js"></script>
     <script src="/assets/bootstrap.min.js"></script>

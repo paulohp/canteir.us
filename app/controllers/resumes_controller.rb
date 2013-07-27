@@ -12,7 +12,7 @@ class ResumesController < InheritedResources::Base
 
   # GET /tasks/1/edit
   def edit
-    @resume = current_user.resume.find(params[:id])
+    @resume = Resume.find(params[:id])
   end
 
   # POST /tasks
@@ -35,7 +35,7 @@ class ResumesController < InheritedResources::Base
   # PUT /tasks/1
   # PUT /tasks/1.json
   def update
-    @resume = current_user.resumes.find(params[:id])
+    @resume = current_user.resume.find(params[:id])
 
     respond_to do |format|
       if @resume.update_attributes(params[:resume])

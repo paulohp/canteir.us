@@ -109,6 +109,11 @@
     <%= f.label :mini_resume %>
     <%= f.text_field :mini_resume %>
   </div>
+  <div class="span10">
+    <div class="academics">
+      <%= link_to_add_fields "Adicionar Formação Academica", f, :academics %>
+    </div>
+  </div>
   <div class="actions span10">
     <%= f.submit "Salvar", :class => "btn btn-large btn-primary" %>
   </div>
