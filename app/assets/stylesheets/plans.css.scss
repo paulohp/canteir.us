@@ -1,3 +1,67 @@
 // Place all the styles related to the plans controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+/*-----------------------------------------------------------------------------------*/
+/*  PRICING TABLE
+/*-----------------------------------------------------------------------------------*/
+.pricing {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+    display: block;
+}
+.pricing .btn {
+    margin: 0
+}
+.pricing .plan {
+  -webkit-box-shadow: 0 0 0 3px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0 0 0 3px rgba(0,0,0,0.05);
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.05);
+}
+.pricing .plan h3 {
+    font-size: 18px;
+    line-height: 45px;
+    margin: 0;
+    padding: 5px 0;
+    background: #fff;
+    color: #5c5c5c;
+}
+.pricing .plan h4 {
+    padding: 20px 0;
+    margin: 0;
+    background: #f5f5f5;
+}
+.pricing .plan h4 span {
+    color: #1abb9c
+}
+.pricing .plan h4 .amount {
+    display: block;
+    text-align: center;
+}
+.pricing .plan h4 .amount {
+    font-size: 45px;
+    padding-bottom: 10px;
+}
+.pricing .plan h4 .amount span {
+    vertical-align: super;
+    font-size: 20px;
+    font-weight: 300;
+}
+.pricing .plan li:nth-child(2n) {
+    background: #f5f5f5
+}
+.pricing .plan ul {
+    margin: 0;
+    list-style: none;
+}
+.pricing .plan ul li {
+    background: #fff;
+    padding: 15px 0;
+}
+.pricing .plan h3 {
+    text-transform: uppercase
+}
+.pricing .select {
+    background: #f5f5f5;
+    padding: 18px 0;
+}
