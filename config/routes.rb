@@ -27,6 +27,10 @@ Canteiro::Application.routes.draw do
       resources :applies
     end
   end
+
+  match 'comprar' => 'plans#comprar'
+  post 'plans/notification'
+
   match 'empresas/:id' => 'companies#show'
   match 'empresas' => 'companies#index'
 
