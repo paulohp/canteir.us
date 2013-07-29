@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
   validates :email, :presence => true
   validates :password, :confirmation => true
   has_one :resume
+  belongs_to :plans
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
@@ -21,6 +22,10 @@ class User < ActiveRecord::Base
                            email:auth.info.email,
                            password:Devise.friendly_token[0,20]
                            )
+      resume = user.create_resume(name:auth.extra.raw_info.name, 
+                                    dob:auth.info.birthday,
+                                    gender:auth.info.gender
+                                  ) 
     end
     user
   end

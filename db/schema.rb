@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130729202217) do
+ActiveRecord::Schema.define(:version => 20130729213227) do
 
   create_table "academics", :force => true do |t|
     t.string   "name"
@@ -186,6 +186,7 @@ ActiveRecord::Schema.define(:version => 20130729202217) do
     t.text     "bio"
     t.string   "provider"
     t.string   "uid"
+    t.integer  "plan_id"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
