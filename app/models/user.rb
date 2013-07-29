@@ -21,7 +21,7 @@ class User < ActiveRecord::Base
                            uid:auth.uid,
                            email:auth.info.email,
                            bio:auth.info.bio,
-                           location:auth.info.location.name,
+                           location:auth.info.location,
                            password:Devise.friendly_token[0,20]
                            )
       resume = user.create_resume(name:auth.extra.raw_info.name, 
