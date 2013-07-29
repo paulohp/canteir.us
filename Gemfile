@@ -12,11 +12,13 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'omniauth-linkedin'
 gem 'omniauth-google-oauth2'
+
 gem 'savon', '~> 2.0'
+
 gem 'activeadmin'
 gem 'meta_search', '>= 1.1.0.pre'
 gem "ransack"
-gem 'newrelic_rpm'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :development do
@@ -38,6 +40,8 @@ gem 'jquery-rails', "2.3.0"
 gem 'mini_magick'
 gem 'carrierwave'
 gem 'will_paginate'
+gem 'mymoip'
+gem 'my_moip-rails'
 #gem 'twitter-bootstrap-rails'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

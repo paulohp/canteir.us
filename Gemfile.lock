@@ -81,6 +81,9 @@ GEM
     has_scope (0.5.1)
     hashie (2.0.5)
     hike (1.2.3)
+    httparty (0.11.0)
+      multi_json (~> 1.0)
+      multi_xml (>= 0.5.2)
     httpauth (0.2.0)
     httpi (2.0.2)
       rack
@@ -111,8 +114,14 @@ GEM
       subexec (~> 0.2.1)
     mini_portile (0.5.1)
     multi_json (1.7.7)
+    multi_xml (0.5.4)
     multipart-post (1.2.0)
-    newrelic_rpm (3.6.5.130)
+    my_moip-rails (0.0.2)
+      rails (~> 3.2.9)
+    mymoip (0.6.2)
+      activemodel
+      builder
+      httparty
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
     nori (2.1.0)
@@ -223,7 +232,8 @@ DEPENDENCIES
   jquery-rails (= 2.3.0)
   meta_search (>= 1.1.0.pre)
   mini_magick
-  newrelic_rpm
+  my_moip-rails
+  mymoip
   omniauth
   omniauth-facebook
   omniauth-google-oauth2

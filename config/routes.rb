@@ -1,5 +1,8 @@
 Canteiro::Application.routes.draw do
 
+  resources :plans
+
+
   get "static/entrar"
 
   resources :categories
@@ -24,7 +27,7 @@ Canteiro::Application.routes.draw do
       resources :applies
     end
   end
-
+  match 'empresas/:id' => 'companies#show'
   match 'empresas' => 'companies#index'
 
   match 'entrar' => 'static#entrar'
