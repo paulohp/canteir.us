@@ -1,33 +1,38 @@
 class PlansController < InheritedResources::Base
-
+  before_filter :authenticate_user!, :except => [:show, :index]
   def comprar
-    purchase_id       = 'UNIQUE_PURCHASE_ID'
+    @user = current_user
+  end
+
+  def confirmation
+    dt = DateTime.now.to_i
+    purchase_id       = "CANT#{Random.new(dt.hash + current_user.hash).rand(10000)}"
     transaction_price = 100.0
 
     card_attrs = {
-     'logo'            => 'visa',
-     'card_number'     => '4916654211627608',
-     'expiration_date' => '06/15',
-     'security_code'   => '000',
-     'owner_name'      => 'Juquinha da Rocha',
-     'owner_birthday'  => '03/11/1980',
-     'owner_phone'     => '5130405060',
-     'owner_cpf'       => '52211670695'
+     'logo'            => params[:logo],
+     'card_number'     => params[:card_number],
+     'expiration_date' => params[:expiration_date],
+     'security_code'   => params[:security_code],
+     'owner_name'      => params[:cho_owner_name],
+     'owner_birthday'  => params[:cho_owner_birthday],
+     'owner_phone'     => params[:cho_owner_phone],
+     'owner_cpf'       => params[:cho_owner_cpf]
     }
 
     payer_attrs = {
-      'id'                    => '1',
-      'name'                  => 'Juquinha da Rocha',
-      'email'                 => 'juquinha@rocha.com',
-      'address_street'        => 'Felipe Neri',
-      'address_street_number' => '406',
-      'address_street_extra'  => 'Sala 501',
-      'address_neighbourhood' => 'Auxiliadora',
-      'address_city'          => 'Porto Alegre',
-      'address_state'         => 'RS',
-      'address_country'       => 'BRA',
-      'address_cep'           => '90440150',
-      'address_phone'         => '5130405060'
+      'id'                    => params[:cho_id],
+      'name'                  => params[:cho_name],
+      'email'                 => params[:cho_email],
+      'address_street'        => params[:cho_address_street],
+      'address_street_number' => params[:cho_address_street_number],
+      'address_street_extra'  => params[:cho_address_street_extra],
+      'address_neighbourhood' => params[:cho_address_neighbourhood],
+      'address_city'          => params[:cho_address_city],
+      'address_state'         => params[:cho_address_state],
+      'address_country'       => params[:cho_address_country],
+      'address_cep'           => params[:cho_address_cep],
+      'address_phone'         => params[:cho_address_phone]
     }
 
     purchase = MyMoip::Purchase.new(

@@ -1,0 +1,41 @@
+<%= form_tag :controller => "plans", :action => "confirmation" do %>
+  
+  <div>
+    <%= label_tag 'owner_name' %>
+    <%= text_field_tag 'owner_name' %>
+  </div>
+  <div>
+    <%= label_tag 'card_number' %>
+    <%= text_field_tag 'card_number' %>
+  </div>
+  <div>
+    <%= label_tag 'security_code' %>
+    <%= text_field_tag 'security_code' %>
+  </div>
+  <div>
+    <%= label_tag 'logo' %>
+    <%= select_tag 'logo', options_for_select([ "visa", "diners" ], "diners") %>
+  </div>
+  <div>
+    <%= label_tag 'expiration_date' %>
+    <%= text_field_tag 'expiration_date' %>
+  </div>
+  
+  <%= hidden_field_tag :cho_owner_birthday, @user.resume.dob %>
+  <%= hidden_field_tag :cho_owner_phone, @user.resume.tel_celular %>
+  <%= hidden_field_tag :cho_owner_cpf, @user.resume.cpf %>
+  <%= hidden_field_tag :cho_id, @user.resume.id %>
+  <%= hidden_field_tag :cho_name, @user.resume.name %>
+  <%= hidden_field_tag :cho_email, @user.email %>
+  <%= hidden_field_tag :cho_address_street, @user.resume.address %>
+  <%= hidden_field_tag :cho_address_street_number, @user.resume.address_number %>
+  <%= hidden_field_tag :cho_address_street_extra, @user.resume.complement %>
+  <%= hidden_field_tag :cho_address_neighbourhood, @user.resume.district %>
+  <%= hidden_field_tag :cho_address_city, @user.resume.city %>
+  <%= hidden_field_tag :cho_address_state, @user.resume.state %>
+  <%= hidden_field_tag :cho_address_country, "BRA" %>
+  <%= hidden_field_tag :cho_address_cep, @user.resume.postal_code %>
+  <%= hidden_field_tag :cho_address_phone, @user.resume.tel_residence %>
+
+  <%= link_to_submit content_tag(:span, "Confirmar a compra"), :class => "btn btn-large btn-danger" %>
+<% end %>

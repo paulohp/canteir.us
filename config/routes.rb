@@ -28,7 +28,8 @@ Canteiro::Application.routes.draw do
     end
   end
 
-  match 'comprar' => 'plans#comprar'
+  match 'plans/:id/comprar' => "plans#comprar"
+  match 'comprar' => 'plans#confirmation'
   post 'plans/notification'
 
   match 'empresas/:id' => 'companies#show'
