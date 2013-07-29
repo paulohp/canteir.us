@@ -20,12 +20,15 @@ class User < ActiveRecord::Base
                            provider:auth.provider,
                            uid:auth.uid,
                            email:auth.info.email,
+                           bio:auth.info.bio,
+                           location:auth.location.name
                            password:Devise.friendly_token[0,20]
                            )
       resume = user.create_resume(name:auth.extra.raw_info.name, 
                                     dob:auth.info.birthday,
                                     gender:auth.info.gender
                                   ) 
+      resume.save
     end
     user
   end
