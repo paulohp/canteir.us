@@ -122,6 +122,7 @@ GEM
       activemodel
       builder
       httparty
+    newrelic_rpm (3.6.6.147)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
     nori (2.1.0)
@@ -234,6 +235,7 @@ DEPENDENCIES
   mini_magick
   my_moip-rails
   mymoip
+  newrelic_rpm
   omniauth
   omniauth-facebook
   omniauth-google-oauth2

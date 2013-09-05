@@ -14,7 +14,7 @@ gem 'omniauth-linkedin'
 gem 'omniauth-google-oauth2'
 
 gem 'savon', '~> 2.0'
-
+gem 'newrelic_rpm'
 gem 'activeadmin'
 gem 'meta_search', '>= 1.1.0.pre'
 gem "ransack"
