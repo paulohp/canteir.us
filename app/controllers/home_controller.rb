@@ -2,7 +2,7 @@ class HomeController < ApplicationController
   layout "home"
   
   def index
-    if user_signed_in?
+    if user_signed_in? || company_signed_in?
       redirect_to "/jobs"
     end
   end
