@@ -2,21 +2,25 @@
   <header class="span12">
     <h3>Explore as mais de <%= @companies.size %> empresas cadastradas!</h3>
   </header>
-  <% @companies.each do |company| %>
-    <div class="span3">
-      <div class="tile">
-        <header class="header-empresa">
-          <%= image_tag(company.picture_url, :width => 200) if company.picture.present? %>
-        </header>
-        <article>
-          <%= link_to company do %>
-            <%= company.name %>
-          <% end %>
-        </article>
-        <footer>
-          <strong><%= company.jobs.size %> vagas</strong>
-        </footer>
+  <% if @companies.size > 0 %>
+    <% @companies.each do |company| %>
+      <div class="span3">
+        <div class="tile">
+          <header class="header-empresa">
+            <%= image_tag(company.picture_url, :width => 200) if company.picture.present? %>
+          </header>
+          <article>
+            <%= link_to company do %>
+              <%= company.name %>
+            <% end %>
+          </article>
+          <footer>
+            <strong><%= company.jobs.size %> vagas</strong>
+          </footer>
+        </div>
       </div>
-    </div>
+    <% end %>
+  <% else %>
+    <div class="alert-warning">Nenhuma Empresa cadastrada.</div>
   <% end %>
 </div>

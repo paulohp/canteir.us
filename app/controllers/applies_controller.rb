@@ -15,8 +15,12 @@ class AppliesController < ApplicationController
   end
 
   def new
-    @job = Job.find(params[:job_id])
-    @apply = @job.applies.build(params[:apply])
+    if current_user.resume == nil
+      redirect_to root_path, notice: 'Cadastre seu curriculo primeiro.'
+    else
+      @job = Job.find(params[:job_id])
+      @apply = @job.applies.build(params[:apply])
+    end
   end
 
   def create

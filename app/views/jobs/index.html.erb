@@ -1,11 +1,11 @@
-<div id="search">
+<!--<div id="search">
   <%= form_tag jobs_path, :method => 'get' do %>
     <p>
       <%= text_field_tag :search, params[:search], :class => "span9" %>
       <%= submit_tag "Buscar", :name => nil, :class => "span3 btn btn-large btn-warning" %>
     </p>
   <% end %>
-</div>
+</div>-->
 <div class="row">
   <div class="aside">
     <% if user_signed_in? %>
@@ -16,11 +16,14 @@
     <% end %>
     <div class="span3">
       <%= search_form_for @search do |f| %>
+        <h3>Filtro</h3>
         <div class="field">
-          <%= f.label :title_cont, "Name contains" %>
+          <%= f.label :title_cont, "Nome" %>
           <%= f.text_field :title_cont %>
         </div>
-        <div class="actions"><%= f.submit "Search" %></div>
+        <div class="actions">
+          <%= f.submit "Buscar", :class => "btn btn-danger" %>
+        </div>
       <% end %>
     </div>
   </div>
@@ -42,20 +45,21 @@
           </div>
         </aside>
         <article class="span4">
-            <span>
-              <p>
-                <%= truncate job.description, length: 160 %>
-              </p>
-                  <%= link_to 'ver mais', job %>
+          <span>
+            <p>
+              <%= truncate job.description, length: 160 %>
+            </p>
           </span>
         </article>
         <br>
         <footer class="span4">
-          <br>
-          <div class="span3">
+          <div class="span1">
+            <%= link_to 'Ver Mais', job, :class => "btn btn-block" %>
+          </div>
+          <div class="span1">
             <%= ejob_applied?(job.id) %>
           </div>
-          <div class="span3">
+          <div class="span1">
             <%= link_to "Ver empresa", job.company, :class => "btn btn-block" %>
           </div>
         </footer>
