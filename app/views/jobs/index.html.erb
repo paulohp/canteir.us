@@ -42,9 +42,11 @@
           </div>
         </aside>
         <article class="span4">
-          <span>
-            <%= truncate job.description, length: 160 %>
-            <%= link_to 'ver mais', job %> 
+            <span>
+              <p>
+                <%= truncate job.description, length: 160 %>
+              </p>
+                  <%= link_to 'ver mais', job %>
           </span>
         </article>
         <br>
