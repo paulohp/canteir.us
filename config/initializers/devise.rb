@@ -1,6 +1,7 @@
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
+  config.secret_key = '20ec640039e2b3f2121309fc1a2be8706a7b01fcdad3d6458fdc6d54321f0c6c5cfec377b6b344c0f6c2fa2b609f9f6be36bc602c24b80af2738f3ae7161d078'
   require "omniauth-facebook"
   require "omniauth-linkedin"
   require "omniauth-google-oauth2"

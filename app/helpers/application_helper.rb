@@ -1,3 +1,4 @@
+# encoding: utf-8
 module ApplicationHelper
 
   #metodo que define qual link do curriculo, se cria um novo ou se pega o existente
