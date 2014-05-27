@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Canteiro</title>
+  <title>Vagas no Canteiro</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= csrf_meta_tags %>
   <script src="/assets/jquery-1.8.3.min.js"></script>
@@ -24,10 +24,12 @@
     <% end %>
   </div>
   <div class="logo-container">
-    <h1 class="left demo-logo">
-      <div class="logo"></div>
-      canteir.us
-    </h1>
+    <a href="" style="color:#34495e">
+      <h1 class="left demo-logo">
+        <div class="logo"></div>
+        canteir.us
+      </h1>
+    </a>
     <ul class="left top-menu">
       <li><%= link_to 'Vagas', jobs_path %></li>
       <% if user_signed_in? %><li><%= link_to 'Curriculo', link_to_resume(current_user.resume) %></li> <% end %>
