@@ -9,7 +9,16 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
+ *= require bootstrap
+ *= require bootstrap-docs
+ *= require bootstrap-responsive
+ *= require flat-ui
+ *= require companies
+ *= require home
+ *= require jobs
+ *= require plans
+ *= require prettify
+ *= require users
  */
  .left{
   float:left;
