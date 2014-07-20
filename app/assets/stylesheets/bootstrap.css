@@ -9,6 +9,7 @@
  */
 html{
   border-top: 6px solid #1ABC9C;
+  border-bottom: 6px solid #3D6CA3;
 }
 .clearfix {
   *zoom: 1;
