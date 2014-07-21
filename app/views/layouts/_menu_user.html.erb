@@ -4,7 +4,7 @@
       <option value="/" selected="selected"><%= current_user.email %></option>
       <option value="<%= user_path(current_user.id) %>"><%= link_to "Perfil", user_path(current_user.id) %></option>
       <option value="2">Minhas Vagas</option>
-      <option value="<%= link_to_resume(current_user.resume) %>">Curriculo</option>
+      <option value="<%= link_to_resume(current_user.resume) %>">Meu Curriculo</option>
       <option value="<%= "/users/#{current_user.id}/edit"%>">Configurações</option>
       <option value="<%= destroy_user_session_path %>">Sair</option>
     </select>
