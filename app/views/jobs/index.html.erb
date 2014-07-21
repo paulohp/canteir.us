@@ -36,7 +36,7 @@
               <%= job.title %><small>(<%= job.number_of_vacancies %> vagas)</small>
             </h3>
             <span style="display:inline;margin-right:8px"><strong>Cargo: </strong><%= job.role %></span>
-            <span style="display:inline"><strong>Salário:</strong> A combinar</span>
+            <span style="display:inline"><strong>Salário:</strong><%= job.salary %></span>
           </header>
           <aside class="right span3">
             <span><strong>Data: </strong><%= job.created_at.to_s(:post) %></span>
@@ -55,13 +55,13 @@
           <br>
           <footer class="span4">
             <div class="span1">
-              <%= link_to 'Ver Mais', job, :class => "btn btn-block" %>
+              <%= link_to 'Mais', job, :class => "btn btn-block" %>
             </div>
             <div class="span1">
               <%= ejob_applied?(job.id) %>
             </div>
             <div class="span1">
-              <%= link_to "Ver empresa", job.company, :class => "btn btn-block" %>
+              <%= link_to "Empresa", job.company, :class => "btn btn-block" %>
             </div>
           </footer>
         </div>

@@ -57,8 +57,10 @@ module ApplicationHelper
       else
         return link_to 'Completar Curriculo', "#", :class => 'btn btn-block btn-danger'
       end
+    elsif company_signed_in?
+      return link_to 'Empresa', "/jobs/#{ejob_id}/applies/new", :class => 'btn btn-block btn-success'
     else
-      return link_to 'Aplicar', "/jobs/#{ejob_id}/applies/new", :class => 'btn btn-block btn-success'
+      return link_to 'Logar', '/', :class => 'btn btn-block btn-success'
     end
   end
 

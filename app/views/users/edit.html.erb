@@ -21,19 +21,19 @@
         <%= form_for @user do |f| %>
         <div class="field">
           <%= f.label :name %>
-          <%= f.text_field :name %>
+          <%= f.text_field :name, :class=>"span9" %>
         </div>
         <div class="field">
           <%= f.label :location %>
-          <%= f.text_field :location %>
+          <%= f.text_field :location, :class=>"span9" %>
         </div>
         <div class="field">
           <%= f.label :bio %>
-          <%= f.text_area :bio, :class => "textarea" %>
+          <%= f.text_area :bio, :class => "textarea span9" %>
         </div>
         <div class="field">
           <%= f.label :password %>
-          <%= f.password_field :password %>
+          <%= f.password_field :password, :class=>"span9" %>
         </div>
         <div class="actions">
           <%= f.submit "Salvar", :class => "btn btn-warning btn-block" %>
