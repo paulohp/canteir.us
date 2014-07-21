@@ -7,7 +7,8 @@
   <script src="/assets/jquery-1.8.3.min.js"></script>
 </head>
 <body>
-<% flash.each do |key, value| %>
+<div class="container">
+  <% flash.each do |key, value| %>
     <% vd('APP HTML', key, value, flash.count) %>
     <% unless flash[key].blank? %>
       <div class="alert <%= key %>">
@@ -15,7 +16,6 @@
       </div>
     <% end %>
   <% end %>
-<div class="container">
   <div class="span11 header-login">
     <% if user_signed_in? %>
       <%= render 'layouts/menu_user' %>
@@ -24,7 +24,7 @@
     <% end %>
   </div>
   <div class="logo-container">
-    <a href="" style="color:#34495e">
+    <a href="/" style="color:#34495e">
       <h1 class="left demo-logo">
         <div class="logo"></div>
         canteir.us
